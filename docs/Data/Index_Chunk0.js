@@ -1,0 +1,1 @@
+define({'Workspace URL':{l:[{u:'/Content/Topics/Software/People.html#kanchor1',t:'People'}]}});

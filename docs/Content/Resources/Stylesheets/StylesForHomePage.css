@@ -1,0 +1,836 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+body
+{
+	background-color: #f8f8ff;
+}
+
+h1
+{
+	margin-top: 25px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 59px;
+	font-weight: bold;
+	line-height: 50px;
+	position: relative;
+	color: #337373;
+	text-shadow: 1px 1px #9fa1a0;
+}
+
+h2
+{
+	margin-bottom: 25px;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 32px;
+	font-weight: normal;
+	line-height: 30pt;
+	color: #337373;
+	position: relative;
+	text-shadow: 1px 1px #9fa1a0;
+}
+
+div.AboutBoxHome
+{
+	overflow: hidden;
+	padding: 12px;
+	background-color: #fff;
+	margin-bottom: 14px;
+	margin-top: 14px;
+	position: relative;
+	width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 20px;
+	color: #333;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #cccccc;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	text-align: center;
+	box-shadow: 0 16px 22px -12px #03153b;
+}
+
+div.AboutBoxHome div:hover
+{
+	box-shadow: 0 16px 22px -12px #78d64b;
+	transform: scale(1.05);
+}
+
+div.AboutBoxHome a	/*Complex Selector: Links within the home tiles will have the following properties*/
+{
+	text-decoration: none;
+	color: #000;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+div.AboutBoxHome a:hover	/*Complex Selector: When hovering over links within the home tiles the following properties will apply.*/
+{
+	color: blue;
+}
+
+div.home-tiles a:hover	/*Complex Selector: When hovering over links within the home tiles the following properties will apply.*/
+{
+	color: blue;
+}
+
+p
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+.off-canvas-content .main-section > .outer-row
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+/*==Home Tiles section==*/
+
+div.home-tiles-container
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: transparent;
+	position: relative;
+}
+
+div.home-tiles	/*This is a custom responsive layout row style (div class) in your stylesheet. This is for Home pages that use rows of 3 tiles, NOT rows of 2 tiles.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.home-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+	margin-bottom: 10px;
+}
+
+div.home-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #fff;
+	border: 1px solid #cccccc;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	text-align: center;
+	padding: 15px;
+	margin-bottom: 0.5%;
+	box-shadow: 0 16px 22px -12px #03153b;
+	height: 135px;
+	overflow: hidden;
+}
+
+div.home-tiles > div:hover
+{
+	box-shadow: 0 16px 8px -16px #78d64b;
+	transform: scale(1.05);
+}
+
+div.home-tiles > div:nth-child(1)
+{
+	width: 10%;
+	margin-left: 34%;
+}
+
+div.home-tiles > div:nth-child(2)
+{
+	width: 10%;
+	margin-left: 1%;
+}
+
+div.home-tiles > div:nth-child(3)
+{
+	width: 10%;
+	margin-left: 1%;
+}
+
+/*=Elements for text contained within each home-tile=*/
+
+p.tile-content
+{
+	color: #333;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+div.home-tiles a	/*Complex Selector: Links within the home tiles will have the following properties*/
+{
+	text-decoration: none;
+	color: #000;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+/*=Elements for text contained within each home-tile=*/
+
+p.tile-title
+{
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #53565A;
+}
+
+p.tile-subtitle
+{
+	text-align: center;
+	font-size: 0.9em;
+	color: #7E8890;
+	margin-top: 20px;
+}
+
+p.tile-content
+{
+	color: #7E8890;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1279px)
+{
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 20%;
+		margin-left: 19%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 20%;
+		margin-left: 1%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 20%;
+		margin-left: 1%;
+	}
+
+	div.info-section > div
+	{
+		text-align: center;
+	}
+
+	div.info-section > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 10%;
+		margin-top: 3%;
+	}
+
+	div.info-section > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 3%;
+	}
+
+	div.info-section > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	p.info-title
+	{
+		font-size: 1.5em;
+	}
+
+	p.info-content
+	{
+		font-size: 1em;
+	}
+
+	div.home-master-page-footer > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.home-master-page-footer > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (max-width: 900px)
+{
+	div.home-tiles > div
+	{
+		margin-top: 2%;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	div.info-container
+	{
+		padding-bottom: 0;
+	}
+
+	div.info-section > div
+	{
+		text-align: center;
+	}
+
+	div.info-section > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 10%;
+		margin-top: 2%;
+	}
+
+	div.info-section > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 10%;
+		margin-top: 2%;
+	}
+
+	div.info-section > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 10%;
+	}
+
+	div.home-master-page-footer > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.home-master-page-footer > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/*==Mad Cap proxy/editor assigned styles==*/
+
+MadCap|topicToolbarProxy
+{
+	float: none;
+}
+
+MadCap|menuProxy.menu1
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+MadCap|menuProxy.menu2
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+html.home-page
+{
+	mc-community-features: disabled;
+}
+
+/*==Responsive Header Styles==*/
+
+#contentBody > .responsive-header
+{
+	background-color: transparent;
+}
+
+/*==Home Page Hero Section==*/
+
+div.topic-hero	/*This is the Hero/Banner on the Home Page - To replace the banner image with your own, change background-image property*/
+{
+	padding-bottom: 5px;
+	padding-top: 40px;
+	height: 1281px;
+}
+
+div.topic-hero::before
+{
+	content: "";
+	background-image: url('../Assets/HeroBg.png');
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.3;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center 0;
+}
+
+/*=Info-container01 section, designed for image on left and text on right   =*/
+
+div.info-container01
+{
+	margin-left: auto;
+	margin-top: 0px;
+	margin-right: auto;
+	padding-bottom: 75px;
+	padding-top: 100px;
+	background-color: #fff;
+	/*Create the parallax scrolling effect*/
+	background-attachment: fixed;
+	background-position: center 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+div.info-section01	/*This is a Responsive Layout, designed for image on left and text on right*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.info-section01::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.info-section01::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.info-section01 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.info-section01 > div:nth-child(1)
+{
+	justify-content: center;
+	margin-left: 38%;
+}
+
+div.info-section01 > div:nth-child(2)
+{
+	justify-content: center;
+	margin-left: 5%;
+}
+
+div.info-container01 p	/*Complex Selector: Any <p> that is contained within div.info-container will have the following properties*/
+{
+	color: #000;
+}
+
+/*=Info-container02 section, designed for image on right and text on left   =*/
+
+div.info-container02
+{
+	margin-left: auto;
+	margin-top: 0px;
+	margin-right: auto;
+	padding-bottom: 75px;
+	padding-top: 100px;
+	/*Create the parallax scrolling effect*/
+	background-attachment: fixed;
+	background-position: center 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #f5f8fa;
+}
+
+div.info-section02	/*This is a Responsive Layout, designed for image on right and text on left*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.info-section02::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.info-section02::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.info-section02 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.info-section02 > div:nth-child(1)
+{
+	justify-content: center;
+	margin-left: 38%;
+}
+
+div.info-section02 > div:nth-child(2)
+{
+	justify-content: center;
+	margin-left: 5%;
+}
+
+div.info-container02 p	/*Complex Selector: Any <p> that is contained within div.info-container will have the following properties*/
+{
+	color: #000;
+}
+
+/*=Elements for content contained within each info section=*/
+
+p.info-title
+{
+	font-family: "Signika", sans-serif;
+	font-size: 30px;
+	line-height: 33px;
+	color: #7fff00;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p.info-content
+{
+	font-family: "Signika", sans-serif;
+	font-size: 18px;
+	color: #696969;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*==Home Page Footer Section==*/
+
+div.footer
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: linear-gradient(#303335, #303335, #303335);
+}
+
+div.footer a	/*Complex Selector: Any anchor (links) tags that are within div.footer will have the following properties */
+{
+	text-decoration: none;
+	color: #DADADA;
+}
+
+div.footer > div.outer-row
+{
+	line-height: 30px;
+	padding: 0;
+}
+
+div.home-master-page-footer	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	width: 55%;
+	background: linear-gradient(#303335, #303335, #303335);
+}
+
+div.home-master-page-footer::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-master-page-footer::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-master-page-footer > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.home-master-page-footer > div:nth-child(1)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.home-master-page-footer > div:nth-child(2)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.home-master-page-footer > div:nth-child(3)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.footer p	/*Complex Selector: Any <p> that is contained within div.footer will have the following properties*/
+{
+	color: #7E8890;
+	font-size: 0.8em;
+}
+
+/*This is used as a fix for an issue in Chrome regarding the parallax effect and foundation*/
+
+.off-canvas-content,
+.off-canvas-wrapper
+{
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+}
+
+MadCap|xref
+{
+	font-size: 1em;
+	color: #5a5a5a;
+	text-decoration: none;
+}
+
+MadCap|xref:focus
+{
+	text-decoration: underline;
+}
+
+MadCap|xref:hover
+{
+	text-decoration: underline;
+}
+
+/*===========================================================================================================================================================
+Styles after this point are styles that are for specific mediums. If any additional styles are added to this template they will be listed after mediums.
+[@media tablet] declares styles that will apply when the screen is in tablet view
+[@media mobile] declares styles that will apply when the screen is in mobile view
+===========================================================================================================================================================*/
+
+@media only screen and (max-width: 5000px)
+{
+	#content-section .right-section,
+	#content-section .left-section
+	{
+		padding: 0;
+	}
+
+	p.info-title
+	{
+		font-size: 20px;
+	}
+
+	p.info-content
+	{
+		font-size: 1em;
+	}
+
+	div.footer
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	div.home-master-page-footer > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.home-master-page-footer > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.home-master-page-footer > div:nth-child(3)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.info-section01 > div
+	{
+		text-align: center;
+	}
+
+	div.info-section01 > div:nth-child(1)
+	{
+		width: 45%;
+		margin-left: 3%;
+		margin-bottom: 10%;
+	}
+
+	div.info-section01 > div:nth-child(2)
+	{
+		width: 45%;
+		margin-left: 3%;
+		margin-bottom: 5%;
+	}
+
+	div.info-section02 > div
+	{
+		text-align: center;
+	}
+
+	div.info-section02 > div:nth-child(1)
+	{
+		width: 45%;
+		margin-left: 3%;
+		margin-bottom: 10%;
+	}
+
+	div.info-section02 > div:nth-child(2)
+	{
+		width: 45%;
+		margin-left: 3%;
+		margin-bottom: 5%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	#content-section
+	{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	div.search-container
+	{
+		margin-bottom: 50px;
+	}
+
+	p.info-title
+	{
+		font-size: 20px;
+	}
+
+	p.info-content
+	{
+		font-size: 1em;
+	}
+
+	div.info-section01 > div
+	{
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	div.info-section01 > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+		margin-bottom: 10%;
+	}
+
+	div.info-section01 > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+		margin-bottom: 5%;
+	}
+
+	div.info-section02 > div
+	{
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	div.info-section02 > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+		margin-bottom: 10%;
+	}
+
+	div.info-section02 > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+		margin-bottom: 5%;
+	}
+
+	div.home-master-page-footer > div	/* Adds separators to the footer items when in mobile layout */
+	{
+		border-bottom: 1px solid #d3d3d3;
+	}
+
+	div.home-master-page-footer > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.home-master-page-footer > div:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	div.home-master-page-footer > div:nth-child(3)
+	{
+		width: 100%;
+	}
+}
+

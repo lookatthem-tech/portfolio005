@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_TopNavGreenFilters" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-conditions="UKGRConditionTags.WFR" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" /><title>Configuring Single Sign-On SAML 2.0</title>
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/UKGMainStylesheet.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head><a name="TopOfPage"></a>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../HomePgG.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="header-links"><a href="#" class="MCTextPopup popup popupHead"><span style="font-family: 'Webdings'">i</span>Tips for Searching<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span><p>For the most successful searches:</p><p style="padding-right: 8px; padding-left: 8px;"><span style="font-family: 'Wingdings'">l</span> Put quotation marks around searches with multiple words. For example, searching for <b>"time off"</b> finds only pages that include that exact combination of words. It does not find <b>overtime</b>, <b>timesheet</b>, etc.</p><p style="padding-right: 8px; padding-left: 8px;"><span style="font-family: 'Wingdings'">l</span> When you search for a single word, be as specific as possible. For example, <b>timesheet</b> would be better than <b>time</b>. Searching for <b>time</b> finds pages that contain <b>time</b>, <b>overtime</b>, <b>timely</b>, or <b>timesheet</b>.</p><p style="padding-right: 8px; padding-left: 8px;"><span style="font-family: 'Wingdings'">l</span> Use the Filter button in the Search box to filter the topics in which you search.</p></span></a>
+                                    </div>
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#header-links").appendTo("div.nav-search-wrapper");
+		});/*]]>*/</script>
+                                    <div class="rr-article-body">
+                                        <div>
+                                            <div data-sticky-container="" id="LWdKB__Xs0W45abDcwRHsg">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="LWdKB__Xs0W45abDcwRHsg:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_SideMenuFixed03 mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/HTMLtocs__PortfolioSiteTOC.js" data-mc-side-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-container">
+                                            <div>
+                                                <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent">
+                                                    <div class="button-group-container-left">
+                                                        <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        <button class="button needs-pie print-button" title="Print">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="nocontent">
+                                                    <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="14" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                                    </div>
+                                                </div>
+                                                <div role="main" id="mc-main-content">
+                                                    <h1>Configuring Single Sign-On SAML 2.0<a name="aanchor13"></a><MadCap:concept term="CrossProduct" /></h1>
+                                                    <p>To configure Single Sign-On SAML 2.0, follow these steps:</p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>To implement SAML, an X.509 certificate is needed (which may be self-signed). The certificate uploaded to the company must directly correspond to the private key used to sign the SAML responses.</p>
+                                                            <div class="Note" data-mc-autonum="&lt;span style=&quot;color: #000099;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;Note: &lt;/b&gt;&lt;/span&gt;"><span class="autonumber"><span><span style="color: #000099;" class="mcFormatColor"><b>Note: </b></span></span></span> An option to import metadata from the identity provider is available. If you choose to import the metadata, this certificate will be included. This is the preferred approach for obtaining the X.509 certificate.&#160; If this is not possible, you will need to obtain the X.509 certificate from the identity provider directly.</div>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>The <b>Enable Single Sign-On (SAML 2.0)</b> option within the <b>Login/Logout Preferences</b> widget will need to be enabled. </p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p><b>UKG Ready™ Partners</b>: This is done by navigating to <b>Maintenance &gt; Companies &gt; All System Companies</b>, clicking the <b>Edit</b> <b>Company</b> icon and checking <b>Enable Single Sign-On (SAML 2.0)</b> within the <b>Login/Logout Preferences</b> widget.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p><b>UKG&#160;Ready™ Customers</b>: This is done by navigating to <b>Global Setup &gt; Company Setup</b> and navigating to the <b>Login Config</b> tab (or adding the Login/Logout Preferences widget to any tab) and checking <b>Enable Single Sign-On (SAML 2.0)</b> within the <b>Login/Logout Preferences</b> widget.</p>
+                                                                </li>
+                                                            </ul>
+                                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="672" data-mc-height="571" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_thumb_0_48.png" tabindex="" /></a>
+                                                            </p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>To enable identity providers to begin SSO configuration on their side, you’ll need to provide them with specific service provider information. You will need to send the Endpoint URL and Audience URLs to the identity provider.</p>
+                                                            <p>The <b>Service Provider Information</b> section of the <b>Login/Logout Preferences</b> widget contains the endpoint URLs and audience URLs.</p>
+                                                            <p>Here are some examples of the endpoint URL format:</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p>US: https://secure.saashr.com/ta/company.login-saml</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>EU: https://secure.workforceready.eu/ta/company.login-saml</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>AUS: https://secure.workforceready.com.au/ta/company.login-saml</p>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The <b>Unique Audience URL</b> checkbox determines if a company id is included in the audience URL. </p>
+                                                            <p>The Audience URL contains the company domain and the company short name when the <b>Unique Audience URL</b> option is checked. Here are some examples:</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p>US: https://secure.saashr.com/company</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>EU: https://secure.workforceready.eu/company</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>AUS: https://secure.workforceready.com.au/company</p>
+                                                                </li>
+                                                            </ul>
+                                                            <p>If not checked, the company domain alone is used for all client companies. Here are some examples:</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p>US: https://secure.saashr.com</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>EU: https://secure.workforceready.eu</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>AUS: https://secure.workforceready.com.au</p>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li value="4">
+                                                            <p>After the Unique Audience URL is set appropriately, the information can be manually set at the IdP’s site or imported by the IdP from an XML file. To generate an XML file containing the required data, click on the <b>Export Service Provider Metadata</b> icon. If the identity provider cannot import an XML file, the information is available in the Service Provider Information section of the Login/Logout Preferences widget and can be manually entered at the IdP site.</p>
+                                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_1.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="562" data-mc-height="84" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_1_thumb_0_48.png" tabindex="" /></a>
+                                                            </p>
+                                                        </li>
+                                                        <li value="5">
+                                                            <p>Configure additional settings.</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p><b>Redirect URL For Login</b>: This is the Single Sign-On Service URL provided by the Identify Provider. This is required for SP-Initiated SSO for login links within emails to work.</p>
+                                                                    <div class="Note" data-mc-autonum="&lt;span style=&quot;color: #000099;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;Note: &lt;/b&gt;&lt;/span&gt;"><span class="autonumber"><span><span style="color: #000099;" class="mcFormatColor"><b>Note: </b></span></span></span> After this is configured, all users will be redirected upon accessing the login page. This setting should be configured with active users in mind who may be redirected to different pages than they would normally see when logging in. It is recommended that this is configured after SSO is completely configured on both the SP and IdP sides.</div>
+                                                                </li>
+                                                                <li>
+                                                                    <p><b>Bypass Redirect URL:</b> This is the URL that will be used for direct logins to the system, without requiring authentication from an external Identify Provider.</p>
+                                                                </li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>
+                                                                    <p><b>URL To Show On Logout</b>: This will be the URL that displays when users log out. </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p><b>Session Validation URL</b>: This is only needed for older versions of SSO and is used for remote login.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p><b>Enable Single Sign-On (SAML 2.0)</b>: Checking this option will enable the options shown below.</p>
+                                                                </li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>
+                                                                    <p><b>Import Metadata From Identity Provider:</b> Clicking on the import icon enables you to import data provided by the Identity Provider, including the Entity ID, Redirect URL For Login and the X.509 Certificate.</p>
+                                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_2.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="355" data-mc-height="43" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_2_thumb_0_48.png" tabindex="" /></a>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p><b>Set Login URL For SP-Initiated SSO:</b> This setting overrides the Redirect URL For Login setting with the URL imported from the metadata.</p>
+                                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_3.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="347" data-mc-height="203" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_3_thumb_0_48.png" tabindex="" /></a>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p><b>Entity ID of Identity Provider:</b> The entity ID of your Identity Provider. </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p><b>Error URL:</b> This will redirect users when there is a problem with logging in through SAML. </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p><b>Error Number Parameter Name:</b> The error name will be appended to the query string of the error URL if parameter numbers for the message are specified here. </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p><b>Error Message Parameter Name:</b> The error message and error number will be appended to the query string of the error URL if parameter names for the message and number are specified here. </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p><b>Upload X.509 Certificate:</b> This is used to upload the X.509 certificate, provided by the IdP into the system.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ol>
+                                                    <h2>SP Initiated SSO Example - How It Works</h2>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>User clicks on a login link from an email.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>User is redirected to the login redirect URL with RelayState appended as a query string parameter.&#160; For example, the URL is:</p>
+                                                            <p>https://login-redirect-url?RelayState=2g53i5g32523rfghdf.</p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>Identity Provider creates a SAML response with the POST message body consisting of:</p>
+                                                            <div class="code">SAMLResponse=response&amp;RelayState=2g53i5g32523rfghdf</div>
+                                                            <p>and posts it back to the system at the endpoint URL:</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p>US: https://secure.saashr.com/ta/company.login-saml, or</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>EU: https://secure.workforceready.eu/ta/company.login-saml, or</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>AUS: https://secure.workforceready.com.au/ta/company.login-saml.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li value="4">
+                                                            <p>After verifying the SAML response, the user is redirected to the appropriate first page based on the value of RelayState.</p>
+                                                        </li>
+                                                    </ol>
+                                                    <h2>Sample SAML Response</h2>
+                                                    <p>The following is a sample SAML response, which contains the following placeholders:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>[[IDP_ENTITY_ID]] -&gt; The Entity ID of the Identity Provider</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>[[COMPANY_SHORT_NAME]] -&gt; The short name of your company</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>[[USERNAME]] -&gt; Username of a valid employee from the company</p>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="code">
+                                                        <p>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
+                                                        <p>&lt;samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" ID="RNPWBRGOGEZZYSLKZKTKUKOIAXPJNQRAMOWCSIPH" IssueInstant="2013-03-03T19:07:11.975Z" Version="2.0"&gt;</p>
+                                                        <p>&#160; &lt;saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity"&gt;[[IDP_ENTITY_ID]]&lt;/saml:Issuer&gt;</p>
+                                                        <p>&#160; &lt;ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"&gt;</p>
+                                                        <p>&#160;&#160;&#160; &lt;ds:SignedInfo&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160; &lt;ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160; &lt;ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160; &lt;ds:Reference URI="#RNPWBRGOGEZZYSLKZKTKUKOIAXPJNQRAMOWCSIPH"&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;ds:Transforms&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="ds saml samlp"/&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/ds:Transform&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/ds:Transforms&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;ds:DigestValue&gt;Pq/3GDC3zbxiO9ek/J//SYHY840=&lt;/ds:DigestValue&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160; &lt;/ds:Reference&gt;</p>
+                                                        <p>&#160;&#160;&#160; &lt;/ds:SignedInfo&gt;</p>
+                                                        <p>&#160;&#160;&#160; &lt;ds:SignatureValue&gt;a12twr1ip873lGjM76VfnGBJCG13J99N/ef28Pc8lnb81xCb8KcmClcvSqLtEAs0J8BF+ZuqYsZ1</p>
+                                                        <p>EkpSbGMAEph6dbhE5XkfjSyBwhVWFS0OlOo/RJsaXi85E8Q9DJzmSRaadYr9CMom59TAHfVUrKAv</p>
+                                                        <p>kk/wEt4SyTJnuUKdMAU=&lt;/ds:SignatureValue&gt;</p>
+                                                        <p>&#160; &lt;/ds:Signature&gt;</p>
+                                                        <p>&#160; &lt;samlp:Status&gt;</p>
+                                                        <p>&#160;&#160;&#160; &lt;samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/&gt;</p>
+                                                        <p>&#160; &lt;/samlp:Status&gt;</p>
+                                                        <p>&#160; &lt;saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="KLEPEIPQAFALFWJEWYWJJYUCQGKQOLYMRVSXEACB" IssueInstant="2013-03-03T19:07:11.975Z" Version="2.0"&gt;</p>
+                                                        <p>&#160;&#160;&#160; &lt;saml:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity"&gt;[[IDP_ENTITY_ID]]&lt;/saml:Issuer&gt;</p>
+                                                        <p>&#160;&#160;&#160; &lt;saml:Subject&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160; &lt;saml:NameID&gt;[[USERNAME]]&lt;/saml:NameID&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160; &lt;saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;saml:SubjectConfirmationData NotOnOrAfter="2013-03-03T19:10:11.975Z" Recipient="https://secure.saashr.com/ta/[[COMPANY_SHORT_NAME]].login-saml"/&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160; &lt;/saml:SubjectConfirmation&gt;</p>
+                                                        <p>&#160;&#160;&#160; &lt;/saml:Subject&gt;</p>
+                                                        <p>&#160;&#160;&#160; &lt;saml:Conditions NotBefore="2013-03-03T19:04:11.975Z" NotOnOrAfter="2013-03-03T19:10:11.975Z"&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160; &lt;saml:AudienceRestriction&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;saml:Audience&gt;https://secure.saashr.com&lt;/saml:Audience&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160; &lt;/saml:AudienceRestriction&gt;</p>
+                                                        <p>&#160;&#160;&#160; &lt;/saml:Conditions&gt;</p>
+                                                        <p>&#160;&#160;&#160; &lt;saml:AuthnStatement AuthnInstant="2013-03-03T19:07:11.975Z"&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160; &lt;saml:AuthnContext&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;saml:AuthnContextClassRef&gt;urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport&lt;/saml:AuthnContextClassRef&gt;</p>
+                                                        <p>&#160;&#160;&#160;&#160;&#160; &lt;/saml:AuthnContext&gt;</p>
+                                                        <p>&#160;&#160;&#160; &lt;/saml:AuthnStatement&gt;</p>
+                                                        <p>&#160; &lt;/saml:Assertion&gt;</p>
+                                                        <p>&lt;/samlp:Response&gt;</p>
+                                                    </div>
+                                                    <h2>E-Signatures</h2>
+                                                    <p>Depending on your requirements and configuration, employees may need to sign documents electronically within the system. The passwords that employees provide to the IdP may not be the same as the passwords for the system. The Electronic Signature Uses field can be configured to allow users to electronically sign a document using a field other than their password. To avoid confusion when electronic signatures are required, it is recommended that this field be configured to something other than <b>Password</b>.</p>
+                                                    <p>The <b>Electronic Signature Uses</b> field can be found in the <b>Signature Settings</b> widget, typically on the <b>Global Policies</b> tab under <b>Company Settings &gt; Global Setup &gt; Company Setup</b>. </p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_4.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="435" data-mc-height="188" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_4_thumb_0_48.png" tabindex="" /></a>
+                                                    </p>
+                                                    <h2>Errors</h2>
+                                                    <p>When logged in to the system, you can find more detailed error messages for SAML 2.0 when you go to the <b>System Events</b> report under <b>Company Settings &gt; System &gt; Events</b> and search for events where source starts with SAML 2.0. When there's an issue with the SAML 2.0 response itself, errors will have a source of SAML 2.0 Response.</p>
+                                                    <p>If the SAML 2.0 response is processed successfully but there's an issue with the username used, you can find the related error when you view login attempts on the Global Access report under <b>My Info &gt; My Reports &gt; System Reports &gt; System Utilities &gt; Global Access</b>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_5.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1523" data-mc-height="705" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_5_thumb_0_48.png" tabindex="" /></a>
+                                                    </p>
+                                                    <h2>Multi-Tenant IDP (Partner Resellers Only) </h2>
+                                                    <p>At the Partner Admin Company Level, the Multi-Tenant IDP option is available. When enabled, the SAML 2.0 Configuration becomes global and all child companies of the Admin company use the same IDP provider. When this option is enabled, the identity provider needs to send the company short name through a SAML 2.0 attribute named companyId.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_6.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="591" data-mc-height="505" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_6_thumb_0_48.png" tabindex="" /></a>
+                                                    </p>
+                                                    <h2>Support for Google SSO on Mobile App</h2>
+                                                    <p>Users utilizing the Mobile App can now authenticate with Google SSO (Single Sign On). This option requires that companies have installed and are using the Google Cloud (formerly called Google for Work) Integration Marketplace product. The Google domain and the Company Domain configured in the Marketplace must match. Locate the product under <b>Company Settings &gt; Marketplace &gt; Marketplace Setup</b>. Look for the product under the Installed tab and click the edit icon.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_7.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="398" data-mc-height="236" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_7_thumb_0_48.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p>Additionally, users can only log in using their company’s Google For Work (Google Cloud) user account. Consumer accounts will not work. Users need to have their primary email address set as their Google For Work (Google Cloud) address to use this functionality.&#160; </p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_8.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="319" data-mc-height="232" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_8_thumb_0_48.png" tabindex="" /></a>&#160; </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body><a href="#TopOfPage" rel="nofollow" class="TopOfPageButton" style="color: #FFFFFF;" title="Top of page">Top</a>
+</html>

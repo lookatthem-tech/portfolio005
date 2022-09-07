@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_TopNavGreenFilters" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-conditions="UKGRConditionTags.WFR" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" /><title>Configuring Single Sign-On OAuth 2.0</title>
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/UKGMainStylesheet.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head><a name="TopOfPage"></a>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../HomePgG.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="header-links"><a href="#" class="MCTextPopup popup popupHead"><span style="font-family: 'Webdings'">i</span>Tips for Searching<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span><p>For the most successful searches:</p><p style="padding-right: 8px; padding-left: 8px;"><span style="font-family: 'Wingdings'">l</span> Put quotation marks around searches with multiple words. For example, searching for <b>"time off"</b> finds only pages that include that exact combination of words. It does not find <b>overtime</b>, <b>timesheet</b>, etc.</p><p style="padding-right: 8px; padding-left: 8px;"><span style="font-family: 'Wingdings'">l</span> When you search for a single word, be as specific as possible. For example, <b>timesheet</b> would be better than <b>time</b>. Searching for <b>time</b> finds pages that contain <b>time</b>, <b>overtime</b>, <b>timely</b>, or <b>timesheet</b>.</p><p style="padding-right: 8px; padding-left: 8px;"><span style="font-family: 'Wingdings'">l</span> Use the Filter button in the Search box to filter the topics in which you search.</p></span></a>
+                                    </div>
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#header-links").appendTo("div.nav-search-wrapper");
+		});/*]]>*/</script>
+                                    <div class="rr-article-body">
+                                        <div>
+                                            <div data-sticky-container="" id="EgH93JPUNkeBTPoWGB8kmQ">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="EgH93JPUNkeBTPoWGB8kmQ:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_SideMenuFixed03 mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/HTMLtocs__PortfolioSiteTOC.js" data-mc-side-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-container">
+                                            <div>
+                                                <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent">
+                                                    <div class="button-group-container-left">
+                                                        <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        <button class="button needs-pie print-button" title="Print">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="nocontent">
+                                                    <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="14" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                                    </div>
+                                                </div>
+                                                <div role="main" id="mc-main-content">
+                                                    <h1>Configuring Single Sign-On OAuth 2.0<a name="aanchor9"></a><MadCap:concept term="CrossProduct" /></h1>
+                                                    <p>OAuth 2.0 (Open Authorization) provides clients secure delegated access to server resources on behalf of a resource owner. It specifies a process for resource owners to authorize third-party access to their server resources without sharing their credentials. </p>
+                                                    <p>Designed specifically to work with Hypertext Transfer Protocol (HTTP), OAuth 2.0 essentially allows access tokens to be issued to third-party clients by an authorization server, with the approval of the resource owner. The third-party then uses the access token to access the protected resources hosted by the resource server.</p>
+                                                    <p>It works by delegating user authentication to the service that hosts the user account and authorizing third-party applications to access the user account. OAuth 2.0 provides authorization flows for mobile devices, as well as web and desktop applications.</p>
+                                                    <div class="Note" data-mc-autonum="&lt;span style=&quot;color: #000099;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;Note: &lt;/b&gt;&lt;/span&gt;"><span class="autonumber"><span><span style="color: #000099;" class="mcFormatColor"><b>Note: </b></span></span></span> For Partners, OAuth 2.0 can be added to Admin and Holding companies, but each client company must be configured individually.</div>
+                                                    <h2>Configuring OAuth 2.0</h2>
+                                                    <p>Enable OAuth 2.0 in the <b>Available Functionality</b> widget of your company. Check the OAuth Configuration checkbox, save and then log in as SA. This will make the widget available in Company Setup.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_16.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="476" data-mc-height="123" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_16_thumb_0_48.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p>Navigate <b>to Company Settings &gt; Global Setup &gt; Company Setup</b>. From <b>Edit Tabs</b>, locate and drag the OAuth Configuration widget to the tab of your choice and save. </p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_17.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1086" data-mc-height="345" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_17_thumb_0_48.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p>From the widget, select Add New to create a new tenant. </p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_18.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="476" data-mc-height="220" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_18_thumb_0_48.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_19.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="487" data-mc-height="318" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_19_thumb_0_48.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p>With the exception of the <b>Account Reference</b> fields, the remaining fields will come from the authorization server. There are multiple OAuth vendors available. Once you have chosen one and have set up your account, the vendor will provide you with the information you need to complete this widget. </p>
+                                                    <ul>
+                                                        <li>
+                                                            <p><b>Client ID</b>: This is a required field and the ID will be generated by the authorization server. </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><b>Client Secret</b>: This is a required field and acts as a password.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><b>User Identifier</b>: This is a required field. This identifier is the name of the standard field (claim) that identifies the subject (user) of the Access Token. It is used to identify the system user account in our system. </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><b>Account Reference</b>: This is a required field. You can select Account ID, Employee ID, External ID, or Username. This is used to match the user account information to the User Identifier value from the Access Token. </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><b>Authorization URL</b>: The authorization URL generated for your company from the authorization server.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><b>Access Token URL</b>: The access token URL generated for your company from the authorization server.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><b>Introspection URL</b>: The introspection URL generated for your company from the authorization server. </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><b>Tenant Identifier</b>: The name of the standard field (claim) that identifies the tenant (company) of the Introspection Token. </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><b>Tenant Name</b>: The expected value of the tenant. It should be matched to the Tenant Identifier value from the Introspection Token. </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body><a href="#TopOfPage" rel="nofollow" class="TopOfPageButton" style="color: #FFFFFF;" title="Top of page">Top</a>
+</html>

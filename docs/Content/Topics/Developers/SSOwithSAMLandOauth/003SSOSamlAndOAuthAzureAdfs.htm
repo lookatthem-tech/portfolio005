@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="_Skins_TopNavGreenFilters" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-conditions="UKGRConditionTags.WFR" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" /><title>Active Directory, ADFS, and Azure with SAML 2.0</title>
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/UKGMainStylesheet.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head><a name="TopOfPage"></a>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../HomePgG.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="header-links"><a href="#" class="MCTextPopup popup popupHead"><span style="font-family: 'Webdings'">i</span>Tips for Searching<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span><p>For the most successful searches:</p><p style="padding-right: 8px; padding-left: 8px;"><span style="font-family: 'Wingdings'">l</span> Put quotation marks around searches with multiple words. For example, searching for <b>"time off"</b> finds only pages that include that exact combination of words. It does not find <b>overtime</b>, <b>timesheet</b>, etc.</p><p style="padding-right: 8px; padding-left: 8px;"><span style="font-family: 'Wingdings'">l</span> When you search for a single word, be as specific as possible. For example, <b>timesheet</b> would be better than <b>time</b>. Searching for <b>time</b> finds pages that contain <b>time</b>, <b>overtime</b>, <b>timely</b>, or <b>timesheet</b>.</p><p style="padding-right: 8px; padding-left: 8px;"><span style="font-family: 'Wingdings'">l</span> Use the Filter button in the Search box to filter the topics in which you search.</p></span></a>
+                                    </div>
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#header-links").appendTo("div.nav-search-wrapper");
+		});/*]]>*/</script>
+                                    <div class="rr-article-body">
+                                        <div>
+                                            <div data-sticky-container="" id="_U2t6D8a-kKxONkqL6z5XQ">
+                                                <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="_U2t6D8a-kKxONkqL6z5XQ:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                    <ul class="nocontent menu _Skins_SideMenuFixed03 mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/HTMLtocs__PortfolioSiteTOC.js" data-mc-side-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-container">
+                                            <div>
+                                                <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent">
+                                                    <div class="button-group-container-left">
+                                                        <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        <button class="button needs-pie print-button" title="Print">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="nocontent">
+                                                    <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="14" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                                    </div>
+                                                </div>
+                                                <div role="main" id="mc-main-content">
+                                                    <h1>Active Directory, ADFS, and Azure with SAML 2.0<a name="aanchor19"></a><MadCap:concept term="CrossProduct" /></h1>
+                                                    <p>This section is provided for the convenience of our users who use Microsoft ADFS and/or Azure for SSO. It is not intended to be used for a complete deployment, troubleshooting, or configuration guide.&#160; For technical support regarding these Microsoft products, a wealth of information is available at Microsoft and other sites, including:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p><a href="https://docs.microsoft.com" rel="nofollow" target="_blank">https://docs.microsoft.com</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="https://techcommunity.microsoft.com" rel="nofollow" target="_blank">https://techcommunity.microsoft.com</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="https://msdn.microsoft.com" rel="nofollow" target="_blank">https://msdn.microsoft.com</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a href="https://www2.microstrategy.com/producthelp/10.8/SystemAdmin/WebHelp/Lang_1033/Content/Admin/integrate_saml_with_adfs.htm" rel="nofollow" target="_blank">Integrating SAML support with ADFS</a>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                    <h2>How to Set Up a Federation with the System using ADFS 2.0</h2>
+                                                    <p>Two steps are required to set up a federation between ADFS 2.0, the IdP, and the system, which is a trusted resource in this scenario. You will need to obtain an X.509 certificate and establish a trust relationship between the system and the ADFS 2.0 server.</p>
+                                                    <p>In this scenario, the user enters the URL for the system in a browser or clicks a link from an email. When the system receives the request, it checks the request to determine if the user has been authenticated. If the authentication data is present, the user can access the system and is redirected back to the URL that they were initially attempting to access. </p>
+                                                    <p>If the authentication data is not present, the request is redirected to an ADFS server for authentication. The system includes the X.509 certificate in any requests to authenticate the user. If the X.509 certificate is valid, the user is asked to login through ADFS. If authenticated, the request is redirected back to the original URL. </p>
+                                                    <p>For all pieces to work correctly in this scenario, you must complete two steps.</p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>Obtain the certificate from the ADFS side and import it or upload it to the system. </p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>Import data about the system into ADFS. ADFS requires this step when configuring a Relying Party Trust.</p>
+                                                        </li>
+                                                    </ol>
+                                                    <h2>Importing or Uploading the ADFS Certificates</h2>
+                                                    <p>To set up the certificate on the ADFS side, you can use a self-signed certificate generated by ADFS or use a different certificate. Two approaches can be used. </p>
+                                                    <p>The recommended approach requires fewer manual steps. In this approach, the certificate is contained in the metadata XML file. The metadata can be downloaded from https://&lt;server&gt;/federationmetadata/2007-06/federationmetadata.xml, where &lt;server&gt; is the ADFS server. </p>
+                                                    <p>The metadata must then be imported to the system in the Enable Single Sign-On (SAML 2.0) section:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p><b>UKG Ready™ Partners</b>: This is done in the <b>Login/Logout Preferences</b> widget in the <b>Company Information</b> page.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><b>UKG&#160;Ready™ Customers</b>: This is done in the <b>Login/Logout Preferences</b> widget in the <b>Global Setup</b> &gt; <b>Company Information</b> page.</p>
+                                                        </li>
+                                                    </ul>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_9.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="255" data-mc-height="77" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_9_thumb_0_48.png" tabindex="" /></a>
+                                                    </p>
+                                                    <h3>Multiple X.509 Certificates</h3>
+                                                    <p>Multiple X.509 certificates can be uploaded, and as a result, a new certificate can be uploaded alongside a soon-to-expire certificate to allow a simpler transition from the old certificate to the new one.</p>
+                                                    <p>Expired or duplicate certificates cannot be uploaded, and a warning displays if a duplicate is uploaded. When a certificate is no longer valid, it is automatically removed after 15 days. Certificates display in a table for better readability.</p>
+                                                    <p>An option to <b>Replace Existing Certificates</b> is available when importing metadata. When enabled, importing metadata deletes the existing certificate(s) and replaces it with the one from the metadata.</p>
+                                                    <p>Expired certificates are hidden by default, and they can be shown when the <b>Show Expired Certificates</b> checkbox is enabled. This checkbox is only visible when the company has any expired certificates. The <b>Valid To</b> date displays in red for expired certificates.</p>
+                                                    <div class="Note" data-mc-autonum="&lt;span style=&quot;color: #000099;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;Note: &lt;/b&gt;&lt;/span&gt;"><span class="autonumber"><span><span style="color: #000099;" class="mcFormatColor"><b>Note: </b></span></span></span>If all certificates are expired, the <b>Show Expired Certificates</b> checkbox is always enabled and all expired certificates are always shown.</div>
+                                                    <h2>Manual Process (Not recommended)</h2>
+                                                    <p>As an alternative, the certificate can be downloaded directly by logging into the ADFS server.&#160; </p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>Start the Microsoft Management Console.
+                </p>
+                                                            <p>You will need to run the Microsoft Management Console (MMC) program by clicking on <b>Start</b>, then selecting <b>Run</b> and entering “MMC”.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>Start the Certificate Snap-in Wizard.
+                </p>
+                                                            <p>Click on the <b>File</b> menu option and select <b>Add/Remove Snap-in</b><b>…</b> Then select <b>Certificates </b>and click on <b>Add</b>.</p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>Specify where to get the file.
+                </p>
+                                                            <p>After the Certificate Snap-in wizard starts, select <b>Computer account</b> and click the <b>Next</b> button.</p>
+                                                            <p>Since you are pulling the file from the local system, select <b>Local computer, </b>then click the <b>Finish</b> button and then click <b>OK</b>.</p>
+                                                        </li>
+                                                        <li value="4">
+                                                            <p>Select the certificate.
+                </p>
+                                                            <p>Expand <b>Console Root\Certificates (Local Computer)\Personal\Certificates</b>. Select the X.509 certificate by right-clicking on it. Select <b>All Tasks</b>, then click <b>Export</b> and then click <b>Next</b>.</p>
+                                                            <p>Choose <b>No, do not export the private key option</b>, then click <b>Next</b>.</p>
+                                                            <p>Choose the <b>Base-64 encoded x.509(.CER)</b> option, then click <b>Next</b>.</p>
+                                                            <p>Enter a file path and name then click the <b>Next</b> button.</p>
+                                                            <p>You should see a pop-up reading <b>The export was successful</b>, and you can click OK, then save and upload the exported file into the system using the <b>Upload X.509 Certificate</b> option.</p>
+                                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_10.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="381" data-mc-height="101" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_10_thumb_0_48.png" tabindex="" /></a>
+                                                            </p>
+                                                        </li>
+                                                    </ol>
+                                                    <h2>Configuring Relying Party Trust Information</h2>
+                                                    <p>The ADFS 2.0 Management snap-in will be used to configure Relying Party Trust Information. From that tool, you can navigate to <b>ADFS 2.0 &gt; Trust Relationships &gt; Relying Party Trusts</b>.&#160; You’ll need to right-click on <b>Relying Party Trusts</b> and select <b>Add Relying Party Trust</b>. </p>
+                                                    <p>A wizard will start. Click the <b>Start</b> button. Two options are available, an import and manual text entry. The import option is recommended. Manual entry should only be used if your IdP cannot import the data from a file. This is not the case with ADFS.</p>
+                                                    <h3>Recommended Option: Importing the Service Provider Data into ADFS</h3>
+                                                    <p>If you have exported service provider metadata from the <b>Login/Logout Preferences</b> widget, you can upload the file. Within the <b>Relying Party Trust</b> wizard, choose <b>Select Data Source</b> and upload the file using the <b>Import data about the relying party from a file</b> option. </p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_11.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="778" data-mc-height="515" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_11_thumb_0_48.png" tabindex="" /></a>
+                                                    </p>
+                                                    <p>For <b>Display</b> name, enter any name (for example, <b>Trusted Resource</b>) and click the <b>Next</b> button.</p>
+                                                    <h3>Manually Entering the Relying Party Information</h3>
+                                                    <p>If your IdP cannot import a file, the alternative is to choose <b>Enter data about the relying party manually</b> option and click the <b>Next</b> button. </p>
+                                                    <p>You’ll need to step through each of the sections in the <b>Relying Party Trust</b> wizard.</p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>In the <b>Specify Display Name</b> section, enter any name for <b>Display</b> (for example, <b>Trusted Resource</b>) and click the <b>Next</b> button.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>For the <b>Choose Profile</b> section, select <b>AD FS 2.0 profile</b> and click the <b>Next</b> button.</p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>For the <b>Configure Certificate</b> section, click the <b>Next</b> button as the system does not support a token encryption certificate.</p>
+                                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_12.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="722" data-mc-height="578" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_12_thumb_0_48.png" tabindex="" /></a>
+                                                            </p>
+                                                        </li>
+                                                        <li value="4">
+                                                            <p>For the <b>Configure URL</b> section, check <b>Enable support for SAML 2.0 Web SSO protocol</b>. For the <b>Relying party SAML 2.0 SSO</b> service URL, enter the Service Provider (SP) URL. This is the Endpoint URL shown in the <b>Service Provider Information</b> in the <b>Login/Logout Preferences</b> widget. </p>
+                                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_13.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="356" data-mc-height="84" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_13_thumb_0_48.png" tabindex="" /></a>
+                                                            </p>
+                                                        </li>
+                                                        <li value="5">Click the <b>Next</b> button. </li>
+                                                        <li value="6">
+                                                            <p>In the <b>Configure Identifiers</b> section, you’ll need to enter some system URLs. In the <b>Relying party trust identifier</b>, the system’s SAML endpoint needs to be entered. This is the Audience URL shown in the <b>Service Provider Information</b> in the <b>Login/Logout Preferences</b> screen, for example: <a href="https://secure2.saashr.com">https://secure2.saashr.com</a></p>
+                                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_14.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="720" data-mc-height="576" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_14_thumb_0_48.png" tabindex="" /></a>
+                                                            </p>
+                                                        </li>
+                                                        <li value="7">Click the <b>Add</b> button then click the <b>Next</b> button.</li>
+                                                        <li value="8">
+                                                            <p>For the <b>Choose Issuance Authorization Rules</b> section, select <b>Permit all users to access this relying party</b> then click the <b>Next</b> button.</p>
+                                                        </li>
+                                                        <li value="9">
+                                                            <p>For the <b>Ready to Add Trust section</b>, you can review the configuration on this screen. Once you are satisfied with the information click the <b>Next</b> button.</p>
+                                                        </li>
+                                                        <li value="10">
+                                                            <p>Click the <b>Close</b> button.</p>
+                                                        </li>
+                                                    </ol>
+                                                    <h3>Claim Rules</h3>
+                                                    <p>You should now see a dialog box to add Claim rules to the <b>Trusted Resource</b> relying party that was just configured. There is only one claim that needs configuration before sending to the system: Name ID. The next steps show you how to configure this. As with any federation configuration, case sensitivity is critical. Please make sure to use the matching case when configuring the claim names.</p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>In the <b>Trusted Resource Claim</b> rules click the <b>Add</b> button.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>For the Claim rule template field, select <b>Send LDAP attributes as Claims</b> then click the <b>Next</b> button.</p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>Enter any name for the Claim rule name, for example, <b>Name ID.</b></p>
+                                                        </li>
+                                                        <li value="4">
+                                                            <p>For the <b>Attribute store</b> field, drop down and select <b>Active Directory</b>.</p>
+                                                        </li>
+                                                        <li value="5">
+                                                            <p>In the <b>LDAP Attribute</b> section, drop down and select <b>SAM-Account-Name</b>.</p>
+                                                        </li>
+                                                        <li value="6">
+                                                            <p>In the <b>Outgoing Claim Type</b> section, drop down and select <b>Name ID</b>.<br /><br /><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_15.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="720" data-mc-height="575" src="../../../Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_15_thumb_0_48.png" tabindex="" /></a></p>
+                                                        </li>
+                                                        <li value="7">
+                                                            <p>Click the <b>Finish</b> button.</p>
+                                                        </li>
+                                                        <li value="8">
+                                                            <p>Click the <b>OK</b> button on the Claim rule configuration for <b>Trusted Resource</b>.</p>
+                                                            <p>Since we have configured this as a SAML assertion we can use the LoginToRP feature with the IDPInitiatedSignon page to get the users signed into ADFS and then redirect them to WFR. Here is an example of this assuming that the ADFS server name is adfs.example.com. The URL would be:</p>
+                                                            <p>https://adfs.example.com/adfs/ls/IDPInitiatedSignon.aspx?LoginToRP=https://secure.entertimeonline.com</p>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body><a href="#TopOfPage" rel="nofollow" class="TopOfPageButton" style="color: #FFFFFF;" title="Top of page">Top</a>
+</html>

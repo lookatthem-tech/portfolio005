@@ -1,0 +1,2287 @@
+/*<meta />*/
+
+/*==BEGIN importing google fonts so that all users can see them==*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Varela+Round&display=swap');
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/*==END importing google fonts so that all users can see them==*/
+
+body
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 11pt;
+	color: #53565a;
+	line-height: 16pt;
+}
+
+@media print
+{
+	body
+	{
+		font-family: calibri;
+		font-size: 14px;
+	}
+}
+
+/*==BEGIN accessibility styles==*/
+
+:focus
+{
+	outline: 2px solid #80ccff;
+	outline-offset: 1px;
+}
+
+/*==END accessibility styles==*/
+/*==BEGIN customizations to HTML5TopNav skin that aren't available in MCFlare skin editor==*/
+
+nav.tab-bar
+{
+	border-bottom: linear-gradient(to right, #005151 0%, #087c79 60%, #005151 100%);
+	box-shadow: 0px 0px 3px #6e7271;
+}
+
+nav.title-bar
+{
+	background: linear-gradient(to right, #005151 0%, #087c79 60%, #005151 100%);
+}
+
+/*==END customizations to HTML5TopNav skin that aren't available in MCFlare skin editor==*/
+
+a.TopOfPageButton
+{
+	position: fixed;
+	background-image: url('../Assets/Assets02/Icons/Arrows/TopOfPageButton.png');
+	margin: 0;
+	top: 93%;
+	right: 5%;
+	z-index: 100;
+	background-repeat: no-repeat;
+	padding-bottom: 15%;
+	padding-top: 0;
+	padding-right: 5%;
+	padding-left: 0;
+	opacity: .6;
+	display: inline-block;
+	color: transparent;
+	font-size: 0pt;
+	overflow: hidden;
+	height: 40px;
+	width: 40px;
+}
+
+a
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	color: blue;
+}
+
+@media print
+{
+	a.unbindInPDF	/* Use this (instead of a or xref) to format links that need to appear as links in HTML but as plain text in Print outputs */
+	{
+		font-family: calibri;
+		font-size: 11pt;
+		font-weight: bold;
+		mc-exclude-action: 'unbind';
+		mc-conditions: 'UKGRConditionTags.unbindInPDF';
+	}
+}
+
+@media print
+{
+	div.TitlePgDescription	/* Use this for User Guide Print title pages. This is the style for any descriptive text you want to add below the title on the title page. This style limits the width of the paragraph so that the title page looks better. */
+	{
+		width: 400px;
+	}
+}
+
+b
+{
+	font-weight: 700;
+}
+
+fieldlist
+{
+	font-weight: 700;
+	color: #0A75C2;
+}
+
+MadCap|expanding
+{
+	mc-open-image: url('resources:Images/WebHelp/minus.png');
+	mc-closed-image: url('resources:Images/WebHelp/plus.png');
+	mc-image-position: left;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+/**************************************************************************************************************** 
+The following styles are needed to change the color of the arrows 
+and other details of the side menu (hamburger menu)
+*****************************************************************************************************************/
+
+.title-bar .menu-icon span
+{
+	background: transparent url('../Assets/Assets02/Icons/Arrows/HamburgerMenuGreen.png') no-repeat;
+	-pie-background: transparent url('../Assets/Assets02/Icons/Arrows/HamburgerMenuGreen.png') no-repeat;
+	title: "open/close navigation menu";
+}
+
+nav.title-bar .menu-icon	/* Use this to move the hamburger menu button */
+{
+	right: auto;
+	margin-top: 10px;
+	margin-left: -25px;
+}
+
+div.logo-wrapper	/* Use this (instead of the TopNav skin) to move the logo */
+{
+	width: 333px;
+	margin-top: 3px;
+	margin-left: 2%;
+}
+
+#header-links
+{
+	background-color: transparent;
+	font-size: 13px;
+	padding-top: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	z-index: 2000;
+	position: absolute;
+	width: 140px;
+	margin-top: 40px;
+	margin-right: 265px;
+}
+
+div.search-filter-content	/* Use this style the search filter dropdown menu */
+{
+	background-color: white;
+	box-shadow: 0 6px 9px -4px #03153b;
+}
+
+@media screen and (max-width: 1279px)
+{
+	nav.title-bar .menu-icon
+	{
+		right: auto;
+		margin-top: 10px;
+		margin-left: -3px;
+	}
+
+	div.logo-wrapper	/* Use this (instead of the TopNav skin) to move the logo */
+	{
+		margin-left: 60px;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 767px)
+{
+	nav.title-bar .menu-icon
+	{
+		right: auto;
+		margin-top: 10px;
+		margin-left: 3px;
+	}
+
+	div.logo-wrapper	/* Use this (instead of the TopNav skin) to move the logo */
+	{
+		margin-top: 6px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#header-links
+	{
+		margin-right: 0px;
+	}
+}
+
+.is-accordion-submenu-parent > a span.submenu-toggle	/* Removes the default arrow/triangle */
+{
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border: inset 6px;
+	border-color: #fff transparent transparent;
+	border-top-style: solid;
+	border-bottom-width: 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -4px;
+	right: 0.6667rem;
+}
+
+html[dir='rtl'] .is-accordion-submenu-parent > a span.submenu-toggle
+{
+	right: inherit;
+	left: 0.6667rem;
+}
+
+/*End custom styles for hamburger menu*/
+/************************ styles for article container BEGIN***************************/
+
+div.rr-article-body
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+div.rr-article-body::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.rr-article-body::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.rr-article-body > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.rr-article-body > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+	margin-bottom: 2%;
+}
+
+div.rr-article-body > div:nth-child(2)
+{
+	width: 73%;
+	margin-left: 2%;
+	margin-bottom: 2%;
+}
+
+div.content-container	/*Wraps the content on the masterpage and provides the white background behind topics.*/
+{
+	margin-right: 0;
+	background-color: #FFF;
+	padding: 25px;
+	min-height: 70vh;
+}
+
+@media screen and (max-width: 1279px)
+{
+	div.rr-article-body > div:nth-child(1)
+	{
+		display: none;
+	}
+
+	div.rr-article-body > div:nth-child(2)
+	{
+		width: 98%;
+		margin-bottom: 2%;
+		margin-left: 2%;
+	}
+}
+
+@media screen and (max-width: 767px)
+{
+	div.rr-article-body > div:nth-child(1)
+	{
+		display: none;
+	}
+
+	div.rr-article-body > div:nth-child(2)
+	{
+		width: 98%;
+		margin-bottom: 2%;
+		margin-left: 2%;
+	}
+}
+
+@media print
+{
+	div.rr-article-body > div:nth-child(1)
+	{
+		display: none;
+	}
+
+	div.rr-article-body > div:nth-child(2)
+	{
+		width: 98%;
+		margin-bottom: 2%;
+		margin-left: 2%;
+	}
+}
+
+/************************ styles for article container END***************************/
+
+/**************************************************************************************************************** 
+This format looks like a button but is just text. Use this instead of graphical buttons in most places. 
+NOTE: You need to apply local formatting to links in each file to remove the underline and make the font white.
+*****************************************************************************************************************/
+
+TextButtons
+{
+	color: #ffffff;
+	background-color: #0A75C2;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 11pt;
+	font-weight: bold;
+	font-color: #ffffff;
+	padding: 13px;
+	border: solid 1px #ffffff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 55px;
+	mc-hyphenate: never;
+	padding-right: auto;
+	padding-left: auto;
+	margin-bottom: 20px;
+}
+
+/************************ Buttons END ***************************/
+
+/**************************************************************************************************************** 
+The UKGPageTOC is a custom TOC style to be used on long pages that have many H2s, such as our Release Notes. 
+This works better than the Madcap MenuProxy, because the Menu Proxy forces the H1 to be repeated at the top of
+the TOC.  
+NOTE: The snippet named UKGReleaseNotesTemplate is a template that includes correctly configured headings and TOC
+for this UKGPageTOC. You could also use this template for other docs that are so long that they need a page 
+TOC (but, ideally, topics/pages should be broken down into shorter chunks so that page TOCs aren't needed).
+*****************************************************************************************************************/
+
+div.UKGPageTOC
+{
+	border-radius: 5px;
+	box-shadow: 0;
+	padding: 12px;
+	margin-bottom: 14px;
+	margin-top: 14px;
+	overflow: hidden;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-variant: normal;
+	font-color: #0A75C2;
+	line-height: 20px;
+	width: 400px;
+	background-color: #e8e8e8;
+	padding-top: 12px;
+	padding-left: 12px;
+}
+
+p.UKGPageTOCTitle
+{
+	font-size: 16px;
+	font-weight: 500;
+	color: #333;
+	text-align: left;
+}
+
+@media print
+{
+	div.UKGPageTOC,
+	p.UKGPageTOCTitle
+	{
+		display: none;
+	}
+}
+
+/************************ UKGPageTOC END ***************************/
+
+ul.menu._Skins_PageLevelTOC2.mc-component > li > a.selected	/*This is required to hide the h1 in the On This Page toc.*/
+{
+	display: none;
+}
+
+ul.menu._Skins_PageLevelTOC2.mc-component > ul > li > a:hover	/*???*/
+{
+	text-decoration: underline;
+}
+
+p.UKGPageTOCOnThisPage	/*This is required to add the On This Page heading inside the On This Page toc.*/
+{
+	font-size: 12pt;
+	font-weight: 500;
+	padding-left: 12px;
+	padding-top: 12px;
+	margin-bottom: 0px;
+	margin-top: 14px;
+	background-color: #e8e8e8;
+	width: 400px;
+	color: #333;
+	text-align: left;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+@media print
+{
+	p.UKGPageTOCOnThisPage
+	{
+		display: none;
+	}
+}
+
+/************************ Accordion dropdown START***************************/
+
+.MCDropDown.dropDown
+{
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.MCDropDown.dropDown + .MCDropDown.dropDown
+{
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.MCDropDown.dropDown:last-of-type
+{
+	margin-bottom: 20px;
+}
+
+@media print
+{
+	.MCDropDown.dropDown:last-of-type
+	{
+		margin-bottom: 5px;
+	}
+}
+
+@media print
+{
+	MadCap|dropDownHead
+	{
+		vertical-align: baseline;
+		text-decoration: none;
+		line-height: normal;
+		mc-heading-level: 3;
+		page-break-after: avoid;
+		font-family: calibri;
+		font-weight: bold;
+		font-size: 20px;
+		margin-bottom: 5px;
+		margin-top: 5px;
+		color: #005151;
+	}
+}
+
+.MCDropDown.dropDown a.dropDownHotspot
+{
+	color: #000000;
+	vertical-align: middle;
+	display: block;
+	padding: 12px 0;
+	border-bottom: 4px solid #ffffff;
+	background-image: none;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	font-weight: normal;
+	font-size: 15px;
+}
+
+.MCDropDown.dropDown.MCDropDown_Open a.dropDownHotspot
+{
+	border-bottom: none;
+}
+
+.MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage,
+.MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage
+{
+	background-image: none;
+}
+
+.MCDropDown.dropDown.MCDropDown_Closed a.dropDownHotspot:before,
+.MCDropDown.dropDown.MCDropDown_Open .MCDropDown_Closed a.dropDownHotspot:before
+{
+	content: url('../Assets/ArrowDownG.png');
+	padding-top: 3px;
+	margin-left: 8px;
+}
+
+.MCDropDown.dropDown.MCDropDown_Closed a.dropDownHotspot:hover
+{
+	background-color: #d9d9d9;
+	color: #000000;
+}
+
+.MCDropDown.dropDown.MCDropDown_Open a.dropDownHotspot:hover
+{
+	background-color: #d9d9d9;
+	color: #000000;
+}
+
+.MCDropDown.dropDown.MCDropDown_Open a.dropDownHotspot:before
+{
+	content: url('../Assets/ArrowUpG.png');
+	padding-top: 3px;
+	margin-left: 8px;
+}
+
+.MCDropDown.dropDown.MCDropDown_Open a.dropDownHotspot
+{
+	background-color: #f8f8f8;
+	color: #000000;
+}
+
+.MCDropDown.dropDown.MCDropDown_Closed a.dropDownHotspot
+{
+	background-color: #f8f8f8;
+	color: #000000;
+}
+
+.MCDropDownBody
+{
+	padding: 0 10px;
+	background-color: white;
+	transition: max-height 0.5s ease-out;
+}
+
+@media print
+{
+	MadCap|dropDownBody
+	{
+		margin-bottom: 0px;
+		width: 100%;
+	}
+}
+
+/************************ Accordion dropdown END***************************/
+
+MadCap|toggler
+{
+	mc-open-image: url('resources:Images/WebHelp/minus.png');
+	mc-closed-image: url('resources:Images/WebHelp/plus.png');
+	color: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+MadCap|popupHead
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	color: #ffffff;
+	font-family: Roboto;
+	font-weight: 300;
+}
+
+MadCap|popupBody
+{
+	width: 300px;
+	vertical-align: baseline;
+	text-decoration: none;
+	box-shadow: none;
+	background-color: #333;
+	border: none 0px #000000;
+	color: #ffffff;
+	text-align: justify;
+}
+
+@media screen and (max-width: 1279px)
+{
+	MadCap|popupBody
+	{
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 767px)
+{
+	MadCap|popupBody
+	{
+		width: 200px;
+	}
+}
+
+Madcap|PopupArrow
+{
+	display: normal;
+	color: #ff0000;
+}
+
+MadCap|glossaryTerm
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	color: blue;
+}
+
+MadCap|glossaryTerm.Expanding
+{
+	color: inherit;
+	font-weight: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+MadCap|glossaryTerm.Hyperlink
+{
+	color: blue;
+	font-weight: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|glossaryTerm.Popup
+{
+	color: blue;
+	font-weight: normal;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	mc-closed-image: none;
+	mc-open-image: none;
+	mc-image-spacing: 0px;
+}
+
+p
+{
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 16pt;
+	margin: 0;
+	margin-bottom: 14px;
+	margin-top: 14px;
+}
+
+@media print
+{
+	p
+	{
+		margin-bottom: 7px;
+		margin-top: 7px;
+	}
+}
+
+h1
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 33px;
+	margin-bottom: 15px;
+	color: #005151;
+	mc-heading-level: 1;
+	page-break-after: avoid;
+}
+
+@media print
+{
+	h1
+	{
+		font-family: calibri;
+		font-weight: bold;
+		font-size: 27px;
+		margin-bottom: 15px;
+		color: #005151;
+		border-bottom: 2px solid #669696;
+	}
+}
+
+h1.RNsHeading1
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 33px;
+	margin-bottom: 15px;
+	color: #005151;
+	mc-heading-level: 0;
+	page-break-after: avoid;
+}
+
+@media print
+{
+	h1.RNsHeading1
+	{
+		font-family: calibri;
+		font-weight: bold;
+		font-size: 27px;
+		margin-bottom: 0;
+		color: #005151;
+		mc-heading-level: 0;
+	}
+}
+
+h2
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 27px;
+	line-height: normal;
+	margin: 0px;
+	color: #005151;
+	mc-heading-level: 2;
+	page-break-after: avoid;
+	margin-bottom: 5px;
+	margin-top: 15px;
+}
+
+@media print
+{
+	h2
+	{
+		font-family: calibri;
+		font-weight: bold;
+		font-size: 22px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		color: #005151;
+	}
+}
+
+h3
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: normal;
+	margin: 0;
+	color: #005151;
+	mc-heading-level: 3;
+	page-break-after: avoid;
+	margin-bottom: 5px;
+	margin-top: 15px;
+}
+
+@media print
+{
+	h3
+	{
+		font-family: calibri;
+		font-weight: bold;
+		font-size: 20px;
+		color: #005151;
+	}
+}
+
+h4
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-size: 21px;
+	line-height: normal;
+	margin: 0;
+	font-weight: normal;
+	font-variant: normal;
+	color: #005151;
+	mc-heading-level: 4;
+	page-break-after: avoid;
+	margin-bottom: 5px;
+	margin-top: 15px;
+}
+
+@media print
+{
+	h4
+	{
+		font-family: calibri;
+		font-weight: bold;
+		font-size: 17px;
+		color: #005151;
+	}
+}
+
+h5
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 19px;
+	line-height: normal;
+	margin-bottom: 10px;
+	margin: 0;
+	margin-top: 10px;
+	color: #005151;
+	mc-heading-level: 5;
+	page-break-after: avoid;
+}
+
+@media print
+{
+	h5
+	{
+		font-family: calibri;
+		font-weight: bold;
+		font-size: 15px;
+		margin-bottom: 2px;
+		margin-top: 0px;
+		color: #005151;
+	}
+}
+
+h6
+{
+	text-decoration: none;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 17px;
+	margin-bottom: 10px;
+	margin: 0;
+	margin-top: 10px;
+	color: #005151;
+	page-break-after: avoid;
+	mc-heading-level: 6;
+}
+
+@media print
+{
+	h6
+	{
+		font-family: calibri;
+		font-weight: bold;
+		font-size: 14px;
+		margin-bottom: 2px;
+		margin-top: 0px;
+		color: #005151;
+	}
+}
+
+::marker
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+::before
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+::after
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageFooter.OddPage
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageFooter.FirstPage
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageFooter.EvenPage
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageFooter
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageHeader.OddPage
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageHeader.FirstPage
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageHeader.EvenPage
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageHeader
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|shortcut
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	color: blue;
+}
+
+MadCap|xref
+{
+	font-variant: normal;
+	text-decoration: none;
+	color: blue;
+}
+
+@media print
+{
+	MadCap|xref
+	{
+		color: blue;
+		font-family: calibri;
+		font-size: 11pt;
+	}
+}
+
+MadCap|xref:hover
+{
+	font-variant: normal;
+	color: #3333cc;
+	text-decoration: underline;
+}
+
+MadCap|xref:focus
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: none;
+	color: #3333cc;
+}
+
+MadCap|menuProxy
+{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: transparent;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 767px)
+{
+	MadCap|menuProxy
+	{
+		display: none;
+	}
+}
+
+MadCap|searchBarProxy
+{
+	text-decoration: none;
+	height: 20;
+	font-size: 10pt;
+	margin-bottom: 20px;
+}
+
+MadCap|tocProxy
+{
+	text-decoration: none;
+	font-variant: normal;
+	clear: right;
+	border-top: 2px solid #669696;
+}
+
+MadCap|miniTocProxy
+{
+	border-radius: 7px;
+	border-top: solid 0px transparent;
+	box-shadow: 0;
+	padding: 12px;
+	margin-bottom: 14px;
+	margin-top: 14px;
+	overflow: hidden;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-variant: normal;
+	line-height: 20px;
+	width: auto;
+	max-width: 475px;
+	background-color: #d9f2e6;
+}
+
+MadCap|topicToolbarProxy
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+@media print
+{
+	MadCap|topicToolbarProxy
+	{
+		display: none;
+	}
+}
+
+div.TopicToolbarSpaceAfter
+{
+	margin-bottom: 25px;
+}
+
+@media print
+{
+	div.TopicToolbarSpaceAfter
+	{
+		display: none;
+	}
+}
+
+@media print
+{
+	div.button-group-container-left
+	{
+		display: none;
+	}
+}
+
+@media print
+{
+	div.ThisGuideIncludes
+	{
+		display: none;
+	}
+}
+
+div.buttons._Skins_TopicToolbar.mc-component
+{
+	float: right;
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+
+@media screen and (max-width: 767px)
+{
+	div.buttons._Skins_TopicToolbar.mc-component
+	{
+		float: right;
+		margin-top: 0px;
+		margin-bottom: 25px;
+		margin-right: -30px;
+		margin-left: 5px;
+	}
+}
+
+@media print
+{
+	div.buttons._Skins_TopicToolbar.mc-component
+	{
+		display: none;
+	}
+}
+
+MadCap|breadcrumbsProxy
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	border-bottom-color: transparent;
+	mc-breadcrumbs-count: 14;
+	mc-breadcrumbs-prefix: ' ';
+	font-size: 10pt;
+	font-color: red;
+	margin-top: 5px;
+}
+
+MadCap|bodyProxy
+{
+	text-decoration: none;
+	font-variant: normal;
+	padding-bottom: 1%;
+	vertical-align: baseline;
+}
+
+br::before
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	margin-top: 14px;
+}
+
+br
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+
+.button.collapse-all-button
+{
+	margin-left: 0px;
+}
+
+.button.expand-all-button
+{
+	margin-left: 0px;
+}
+
+.button.previous-topic-button
+{
+	margin-left: 0px;
+}
+
+.button.next-topic-button
+{
+	margin-left: 0px;
+}
+
+.button.print-button
+{
+	margin-left: 0px;
+}
+
+div.code
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	background: #e6ffe6;
+	font-variant: normal;
+	font-family: 'Roboto', sans-serif;
+	font-size: 9pt;
+	line-height: 10pt;
+	border-left: solid 4px #78d64b;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+div.code > p
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	background: #e6ffe6;
+	font-variant: normal;
+	font-family: 'Roboto', sans-serif;
+	font-size: 9pt;
+	line-height: 10pt;
+	margin: 2px;
+}
+
+li
+{
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 16pt;
+	margin-bottom: 14px;
+	margin-top: 14px;
+}
+
+ol
+{
+	text-decoration: none;
+	font-variant: normal;
+	margin-left: 10px;
+	margin: 0em 0em 0em -1em;
+	vertical-align: middle;
+	margin-bottom: 9pt;
+	margin-right: 9pt;
+	margin-top: 9pt;
+}
+
+ul
+{
+	text-decoration: none;
+	font-variant: normal;
+	margin: 0px 0px 0px -1em;
+	list-style-type: disc;
+	margin-top: 9pt;
+	margin-bottom: 9pt;
+}
+
+div.AboutBox	/*Use the AboutBox style to create our box with a link to PDF, which we put on the first page of every User Guide and RNs*/
+{
+	overflow: hidden;
+	padding: 12px;
+	background-color: #fff;
+	margin-bottom: 36px;
+	margin-top: 30px;
+	position: relative;
+	width: 300px;
+	margin-right: auto;
+	margin-left: 0px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 15px;
+	color: #333;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #cccccc;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	box-shadow: 0 6px 9px -4px #03153b;
+}
+
+@media print
+{
+	div.AboutBox
+	{
+		display: none;
+	}
+}
+
+div.AboutBox a	/*Complex Selector: Links within the home tiles will have the following properties*/
+{
+	text-decoration: none;
+	color: #333;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+@media print
+{
+	div.AboutBox a	/*Complex Selector: Links within the home tiles will have the following properties*/
+	{
+		display: none;
+	}
+}
+
+a:link
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: blue;
+}
+
+a:visited
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: blue;
+}
+
+a:focus
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: blue;
+}
+
+div.AboutBox a:hover	/*Complex Selector: When hovering over links within the home tiles the following properties will apply.*/
+{
+	color: blue;
+}
+
+a:hover
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-decoration: underline;
+	color: blue;
+}
+
+a:active
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: blue;
+}
+
+div.Note
+{
+	mc-auto-number-format: '{color #000099}{b}Note: {/b}{/color}';
+	overflow: hidden;
+	padding: 12px;
+	background-color: #cfe9fc;
+	border-left: solid 4px #0A75C2;
+	margin-bottom: 14px;
+	margin-top: 14px;
+}
+
+div.Important
+{
+	mc-auto-number-format: '{color #660099}{b}Important: {/b}{/color}';
+	overflow: hidden;
+	padding: 12px;
+	background-color: #e6ccff;
+	border-left: solid 4px #8e33cc;
+	margin-bottom: 14px;
+	margin-top: 14px;
+}
+
+div.Tip
+{
+	mc-auto-number-format: '{color #ff9933}{b}Tip: {/b}{/color}';
+	overflow: hidden;
+	padding: 12px;
+	background-color: #ffffcc;
+	border-left: solid 4px #ffc600;
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+
+div.Warning
+{
+	mc-auto-number-format: '{color maroon}{b}Warning: {/b}{/color}';
+	overflow: hidden;
+	padding: 12px;
+	background-color: #ffd6cc;
+	border-left: solid 4px #ff3300;
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+
+div.Example
+{
+	mc-auto-number-format: '{color #005151}{b}Example: {/b}{/color}';
+	overflow: hidden;
+	padding: 12px;
+	background-color: #f0f5f5;
+	border-left: solid 4px #005151;
+	margin-bottom: 14px;
+	margin-top: 14px;
+}
+
+/*==BEGIN styles for special boxes to label audience-specific content*/
+
+div.AccrualsOneOnly
+{
+	mc-auto-number-format: '{color #005151}{b}Only for Accruals 1.0: {/b} {/color}';
+	background-image: url('../Assets/Acc1.png');
+	background-repeat: no-repeat;
+	border: solid 2px #78d64b;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding-left: 70px;
+	padding-right: 15px;
+	background-color: #ffffff;
+	margin: 20px 10px 20px 0;
+	line-height: 22px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	background-position: 15px 13px;
+}
+
+div.AccrualsTwoOnly
+{
+	mc-auto-number-format: '{color #005151}{b}Only for Accruals 2.0: {/b} {/color}';
+	background-image: url('../Assets/Acc2.png');
+	background-repeat: no-repeat;
+	border: solid 2px #78d64b;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding-left: 70px;
+	padding-right: 15px;
+	background-color: #ffffff;
+	margin: 20px 10px 20px 0;
+	line-height: 22px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	background-position: 15px 13px;
+}
+
+div.AusOnly
+{
+	mc-auto-number-format: '{color #005151}{b}Only for Australia: {/b} {/color}';
+	background-image: url('../Assets/FlagAus.png');
+	background-repeat: no-repeat;
+	border: solid 2px #78d64b;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding-left: 70px;
+	padding-right: 15px;
+	background-color: #ffffff;
+	margin: 20px 10px 20px 0;
+	line-height: 22px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	background-position: 15px 16px;
+}
+
+div.NzOnly
+{
+	mc-auto-number-format: '{color #005151}{b}Only for AUS and NZ: {/b} {/color}';
+	background-image: url('../Assets/Globe.png');
+	background-repeat: no-repeat;
+	border: solid 2px #78d64b;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding-left: 55px;
+	padding-right: 15px;
+	background-color: #ffffff;
+	margin: 20px 10px 20px 0;
+	line-height: 22px;
+	padding-bottom: 18px;
+	padding-top: 18px;
+	background-position: 15px 16px;
+}
+
+div.AusEuOnly
+{
+	mc-auto-number-format: '{color #005151}{b}Only for AUS and EU: {/b} {/color}';
+	background-image: url('../Assets/Globe.png');
+	background-repeat: no-repeat;
+	border: solid 2px #78d64b;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding-left: 55px;
+	padding-right: 15px;
+	background-color: #ffffff;
+	margin: 20px 10px 20px 0;
+	line-height: 22px;
+	padding-bottom: 18px;
+	padding-top: 18px;
+	background-position: 15px 16px;
+}
+
+div.EuOnly
+{
+	mc-auto-number-format: '{color #005151}{b}Only for EU: {/b} {/color}';
+	background-image: url('../Assets/FlagEU.png');
+	background-repeat: no-repeat;
+	border: solid 2px #78d64b;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding-left: 70px;
+	padding-right: 15px;
+	background-color: #ffffff;
+	margin: 20px 10px 20px 0;
+	line-height: 22px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	background-position: 15px 16px;
+}
+
+div.CanadaOnly
+{
+	mc-auto-number-format: '{color #005151}{b}Only for Canadian Payroll: {/b} {/color}';
+	background-image: url('../Assets/FlagCanada.png');
+	background-repeat: no-repeat;
+	border: solid 2px #78d64b;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding-left: 70px;
+	padding-right: 15px;
+	background-color: #ffffff;
+	margin: 20px 10px 20px 0;
+	line-height: 22px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	background-position: 15px 16px;
+}
+
+div.USOnly
+{
+	mc-auto-number-format: '{color #005151}{b}Only for United States: {/b} {/color}';
+	background-image: url('../Assets/FlagUS.png');
+	background-repeat: no-repeat;
+	border: solid 2px #78d64b;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding-left: 70px;
+	padding-right: 15px;
+	background-color: #ffffff;
+	margin: 20px 10px 20px 0;
+	line-height: 22px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	background-position: 15px 16px;
+}
+
+div.CustomersOnly
+{
+	mc-auto-number-format: '{color #005151}{b}Only for UKG Ready™ Customers: {/b} {/color}';
+	background-image: url('../Assets/customers.png');
+	background-repeat: no-repeat;
+	border: solid 2px #78d64b;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding-left: 60px;
+	padding-right: 15px;
+	background-color: #ffffff;
+	margin: 20px 10px 20px 0;
+	line-height: 22px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	background-position: 15px 15px;
+}
+
+div.PartnersOnly
+{
+	mc-auto-number-format: '{color #005151}{b}Only for Partners: {/b} {/color}';
+	background-image: url('../Assets/partners.png');
+	background-repeat: no-repeat;
+	border: solid 2px #78d64b;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding-left: 61px;
+	padding-right: 15px;
+	background-color: #ffffff;
+	margin: 20px 10px 20px 0;
+	line-height: 22px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	background-position: 15px 15px;
+}
+
+/*==END styles for special boxes to label audience-specific content*/
+
+div:nth-child(3)
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+div:nth-child(2)
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+div:nth-child(1)
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+div::before
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+div::after
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+div
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 16pt;
+}
+
+hr
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border: solid 1px #dcdcdc;
+}
+
+a.MCBreadcrumbsLink
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: blue;
+}
+
+a.MCBreadcrumbsLink:hover
+{
+	text-decoration: underline;
+}
+
+p.TOC9
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.TOC8
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.TOC7
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.TOC6
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.TOC5
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+@media print
+{
+	p.TOC6,
+	p.TOC5,
+	p.TOC4,
+	p.TOC3,
+	p.TOC2
+	{
+		font-family: calibri;
+		font-weight: normal;
+		font-size: 11pt;
+		margin-bottom: 0px;
+		color: #005151;
+	}
+
+	p.TOC1
+	{
+		font-family: calibri;
+		font-weight: normal;
+		font-size: 11pt;
+		margin-bottom: 0px;
+		color: #005151;
+	}
+}
+
+p.TOC4
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.TOC3
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.TOC2
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.TOC1
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC9
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC8
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC7
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC6
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC5
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC4
+{
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+p.MiniTOC3
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC2
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC1
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	color: blue;
+}
+
+p.MiniTOC1:link
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: none;
+	color: blue;
+}
+
+p.MiniTOC1:visited
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: none;
+	color: blue;
+}
+
+a.MiniTOC1:link
+{
+	font-weight: normal;
+}
+
+a.MiniTOC1:visited
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: none;
+	color: blue;
+}
+
+a.MiniTOC1:hover
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: underline;
+	color: blue;
+}
+
+p.MiniTOC1:focus
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	color: blue;
+}
+
+p.MiniTOC1:hover
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: underline;
+	color: blue;
+}
+
+p.MiniTOC1:active
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	color: blue;
+}
+
+div.sideContentRight
+{
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 30%;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #000000;
+	font-size: 10pt;
+	float: right;
+}
+
+MadCap|dropDownBody.Final
+{
+	border-bottom: solid 0px #000000;
+}
+
+img.thumbnail	/*Class for images to expand/shrink when clicked. The two options for mc-thumbnail are hover and popup.*/
+{
+	border-style: solid;
+	border-color: #cfd0d0;
+	border-width: 1px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	mc-thumbnail: popup;
+	mc-conditions: none;
+	box-shadow: 4px 4px 3px 2px rgba(0,0,0,0.1);
+}
+
+img.DoesNotExpand	/*display image as only a thumbnail*/
+{
+	bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	mc-thumbnail: link;
+	mc-thumbnail-max-height: 36px;
+}
+
+img.smallbutton
+{
+	max-height: 25px;
+	max-width: 25px;
+}
+
+img.medbutton
+{
+	max-width: auto;
+	vertical-align: baseline;
+}
+
+span.SearchHighlight
+{
+	background-color: #22ff05;
+}
+
+MadCap|dropDownBody
+{
+	margin-left: 0.5px;
+}
+
+@media print
+{
+	img.thumbnail
+	{
+		max-width: 75%;
+		max-height: auto;
+		border-style: solid;
+		border-color: #cfd0d0;
+		border-width: 1px;
+	}
+
+	a
+	{
+		color: blue;
+	}
+
+	a:active
+	{
+		color: blue;
+	}
+
+	a:focus
+	{
+		color: blue;
+	}
+
+	a:hover
+	{
+		color: blue;
+	}
+
+	a:link
+	{
+		color: blue;
+		font-family: calibri;
+		font-size: 11pt;
+	}
+
+	a:visited
+	{
+		color: blue;
+		font-family: calibri;
+		font-size: 11pt;
+	}
+
+	p
+	{
+		line-height: normal;
+		mc-hyphenate: never;
+	}
+
+	p
+	{
+		line-height: normal;
+		mc-hyphenate: never;
+	}
+
+	p.TitlePgDesc
+	{
+		margin-top: 30px;
+		frame-break-before: avoid;
+		page-break-before: avoid;
+	}
+
+	h1
+	{
+		mc-hyphenate: never;
+	}
+
+	h2
+	{
+		mc-hyphenate: never;
+	}
+
+	ul
+	{
+		list-style-image: none;
+		line-height: normal;
+		margin: 0px 0px;
+		margin-left: 3em;
+	}
+
+	ul > li::marker
+	{
+		content: '•';
+		vertical-align: -4px;
+	}
+
+	tr
+	{
+		line-height: normal;
+		mc-hyphenate: never;
+	}
+
+	ol
+	{
+		line-height: normal;
+		margin: 0px 0px;
+		margin-left: 3em;
+	}
+
+	div.Note
+	{
+		margin-right: auto;
+		mc-hyphenate: never;
+	}
+
+	div.Tip
+	{
+		margin-right: auto;
+		mc-hyphenate: never;
+	}
+
+	div.Warning
+	{
+		margin-right: auto;
+		mc-hyphenate: never;
+	}
+
+	h4
+	{
+		mc-hyphenate: never;
+	}
+
+	h3
+	{
+		mc-hyphenate: never;
+	}
+
+	h5
+	{
+		mc-hyphenate: never;
+	}
+
+	h6
+	{
+		mc-hyphenate: never;
+	}
+
+	MadCap|dropDownBody
+	{
+		border-bottom-style: none;
+		mc-hyphenate: never;
+	}
+
+	p.TOC1
+	{
+		mc-expandable: true;
+	}
+
+	div.Example
+	{
+		mc-hyphenate: never;
+	}
+
+	td
+	{
+		mc-hyphenate: never;
+	}
+
+	th
+	{
+		mc-hyphenate: never;
+	}
+
+	li
+	{
+		mc-hyphenate: never;
+	}
+}
+
+div.ContentRow	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.ContentRow::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.ContentRow::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.ContentRow > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.ContentRow > div:nth-child(1)
+{
+	width: 28%;
+	margin-left: 0%;
+}
+
+div.ContentRow > div:nth-child(2)
+{
+	width: 60%;
+	margin-left: 2%;
+}
+
+/*Begin styles for responsive pages on tablet and mobile*/
+
+@media only screen and (max-width: 5000px)
+{
+	div.ContentRow > div:nth-child(1)
+	{
+		width: 32%;
+		margin-left: 0.5%;
+	}
+
+	div.ContentRow > div:nth-child(2)
+	{
+		width: 56%;
+		margin-left: 2%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	div.ContentRow > div:nth-child(1)
+	{
+		width: 95%;
+		margin-left: 1%;
+	}
+
+	div.ContentRow > div:nth-child(2)
+	{
+		width: 95%;
+		margin-left: 1%;
+	}
+
+	div.sticky-menu
+	{
+		display: none;
+	}
+}
+
+/*End styles for responsive pages on tablet and mobile*/
+/*BEGIN elements for lists with custom bullets*/
+
+ul.NoBullet	/*use this ul for lists with custom bullets*/
+{
+	list-style-type: none;
+	padding: 0px;
+	margin-left: 3px;
+	margin-bottom: 3px;
+	margin: 8px 0px 8px 3px;
+}
+
+li.CustomBulletBlueSquare
+{
+	background-image: url('../Assets/BulletSqBl.png');
+	background-repeat: no-repeat;
+	display: block;
+	padding-top: 1px;
+	background-position: 0px 21px;
+	height: auto;
+	margin: 0px;
+	padding-left: 16px;
+	line-height: 16pt;
+}
+
+li.CustomBulletBlueSqSm
+{
+	background-image: url('../Assets/BulletSqBlSm.png');
+	background-repeat: no-repeat;
+	display: block;
+	padding-top: 1px;
+	background-position: 0px 22px;
+	height: auto;
+	margin: 0px;
+	padding-left: 13px;
+	line-height: 16pt;
+}
+
+/*END elements for lists with custom bullets*/
+
+span.SearchHighlight1
+{
+	color: #000000;
+	background-color: #22ff05;
+}
+
+span.SearchHighlight10
+{
+	color: #ffffff;
+	background-color: #22ff05;
+}
+
+span.SearchHighlight2
+{
+	color: #000000;
+	background-color: #22ff05;
+}
+
+span.SearchHighlight3
+{
+	color: #000000;
+	background-color: #22ff05;
+}
+
+span.SearchHighlight4
+{
+	color: #000000;
+	background-color: #22ff05;
+}
+
+span.SearchHighlight5
+{
+	color: #000000;
+	background-color: #22ff05;
+}
+
+span.SearchHighlight6
+{
+	color: #ffffff;
+	background-color: #22ff05;
+}
+
+span.SearchHighlight7
+{
+	color: #ffffff;
+	background-color: #22ff05;
+}
+
+span.SearchHighlight8
+{
+	color: #ffffff;
+	background-color: #22ff05;
+}
+
+span.SearchHighlight9
+{
+	color: #ffffff;
+	background-color: #22ff05;
+}
+

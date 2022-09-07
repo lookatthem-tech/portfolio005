@@ -1,0 +1,176 @@
+﻿/*<meta />*/
+
+@import url('https://fonts.googleapis.com/css?family=Signika:600');
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+body
+{
+	margin: 0;
+	background-color: #E4F1F6;
+}
+
+.HeaderAboveSlideshow
+{
+	width: 100%;
+	padding: 60px;
+	font-family: "Signika", sans-serif;
+	font-size: 40px;
+	background-color: #4C6A92;
+	text-align: center;
+	color: #FFF;
+}
+
+h2
+{
+	font-family: "Signika", sans-serif;
+	font-size: 30px;
+	text-align: center;
+	color: #4C6A92;
+	margin-bottom: 30px;
+}
+
+p.info-content
+{
+	font-family: "Fjalla One", sans-serif;
+	font-size: 14pt;
+	color: #fff;
+	line-height: 16pt;
+	text-align: center;
+}
+
+MadCap|slideThumbnail.active
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|slideThumbnail:hover
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|slideThumbnail
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|slideshowBullet.active
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	background-color: transparent;
+}
+
+MadCap|slideshowBullet:hover
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|slideshowBullet
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	background-color: transparent;
+}
+
+MadCap|slideshowCaption
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	color: #000000;
+	background-color: transparent;
+	margin-top: 10px;
+	font-family: default;
+}
+
+MadCap|slide
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	background-color: transparent;
+	font-family: default;
+	color: #fff;
+	
+}
+
+
+
+
+
+
+
+div.MCSlide.slideshow
+{
+	padding-bottom: 10px;
+	background-color: white;
+	border-bottom-style: none;
+	border-width: 0px;
+	border-bottom-color: transparent;
+	border: none 2px #000000;
+	box-shadow: 3px 3px 6px #666;
+	padding-top: 10px;
+	font-family: default;
+	text-align: center;
+}
+
+
+
+
+.mc-wrapper .mc-controls-direction a
+{
+    
+    top: 50%;
+    
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MadCap|xref
+{
+	font-family: inherit;
+	
+	text-decoration: none;
+	color: #fff;
+	
+}
+
+MadCap|xref:hover
+{
+	color: yellow;
+	text-decoration: underline;
+}
+
+MadCap|xref:focus
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	color: #fff;
+}
+
