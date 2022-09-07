@@ -1,61 +1,138 @@
-<!DOCTYPE html>
+<?xml version="1.0" encoding="utf-8"?>
 <html lang="en-US" xml:lang="en-US" class="home-page">
-    
+    <head>
+        <style>
+			
+			
+			
+			ul {
+			list-style-type: none;
+			
+			margin-top: auto;
+			margin-left: 20px;
+			margin-right: auto;
+			padding: 0px;
+			width: 15%;
+			background-color: #151d1e;
+			position: fixed;
+			height: 90%;
+			overflow: auto;
+			border: 16px;
+			border-color: red transparent transparent;
+			border-radius: 7px;
+			}
 
-<head>
-   
+			li a {
+			display: block;
+			color: white;
+			padding: 16px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			
+			}
 
-    <body>
-	
-	
-	
-	
-	
-	
-	
-	
-	<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.button {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #04AA6D;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
+			li a.active {
+			background-color: gray;
+			color: white;
+			}
+
+			li a:hover:not(.active) {
+			background-color: #555;
+			color: white;
+			font-weight: bold;		
+			}
+			
+
+body
+{
+margin: 0;
+vertical-align: baseline;
+text-decoration: none;
+font-variant: normal;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 11pt;
+background-color: black;
+line-height: 16pt;
 }
 
-.button:hover {background-color: #3e8e41}
-
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+			
+div.IndexBody
+{
+background-color: #151d1e;
+margin-top: 40px;
+margin-right: 40px;
+margin-left: 20%;
+text-align: left;
+padding-left: 50px;	
+height: 50%;
+border-radius: 7px;
 }
+			
+			
+			div.IndexImage
+			{
+			background-color: #151d1e;
+			display: inline;
+			float: right;
+			margin-right: 100px;
+			color: red;
+		
+			border: 9px solid yellow;
+			}
+
+
+h1
+{
+color: #e2bbf6;
+text-align: left;
+padding-top: 50px;
+font-family: Verdana;	
+
+}			
+			
+			p
+			{
+			color: #e2bbf6;
+			text-align: left;
+			padding-top: 20px;
+			padding-bottom: 0px;
+			font-family: Verdana;
+			max-width: 500px;
+			display: inline-block;	
+			float: left;
+
+			}			
+			
+
 </style>
-</head>
-<body>
-
-<h2>Animated Buttons - "Pressed Effect"</h2>
-
-<p><a href="Default.htm"><button class="button">Click Me</button></a></p>
-        
-
-
-
-
-
-    
-                    
-					<p><a href="..Content/Topics/HomePgG.htm">Home Page???</a></p>
-					<p><a href="Default.htm">Does this go to default??</a></p>
-        
-            
-                
+    </head>
+    <body>
+        <ul>
+            <li><a href="../Topics/Software/SoftwareLanding.htm">Software</a>
+            </li>
+            <li><a href="../Topics/Hardware/HardwareLanding.htm">Hardware</a>
+            </li>
+            <li><a href="../Topics/Developers/DevelopersLanding.htm">Developers</a>
+            </li>
+            <li><a href="../Topics/Videos/VidsLanding.htm">Videos</a>
+            </li>
+            <li><a href="../Topics/PrintTemplates/PrintLanding.htm">Print templates</a>
+            </li>
+            <li><a href="../Topics/Designs/HTML5DesignsLanding.htm">HTML5 designs</a>
+            </li>
+            <li><a href="../Topics/APIDocs/APIDocsLanding.htm">API docs</a>
+            </li>
+            <li><a href="../Topics/BookPub/BooksLanding.htm">Book publishing</a>
+            </li>
+            <li><a href="About.htm">About me</a>
+            </li>
+        </ul>
+        <div class="IndexBody">
+            <h1>Welcome to my portfolio</h1>
+            <p>This is my portfolio. My name is Ryan. More text. More text. More text. This is my portfolio. My name is Ryan. More text. More text. More text. This is my portfolio. My name is Ryan. More text. More text. More text.</p>
+            <div class="IndexImage">
+                <img src="Harley.png" />
+            </div>
+        </div>
     </body>
 </html>
