@@ -45,13 +45,13 @@ body
 
 nav.tab-bar
 {
-	border-bottom: linear-gradient(to right, #005151 0%, #087c79 60%, #005151 100%);
+	border-bottom: #333333;
 	box-shadow: 0px 0px 3px #6e7271;
 }
 
 nav.title-bar
 {
-	background: linear-gradient(to right, #005151 0%, #087c79 60%, #005151 100%);
+	background: #333333;
 }
 
 /*==END customizations to HTML5TopNav skin that aren't available in MCFlare skin editor==*/
@@ -133,8 +133,8 @@ and other details of the side menu (hamburger menu)
 
 .title-bar .menu-icon span
 {
-	background: transparent url('../Assets/Assets02/Icons/Arrows/HamburgerMenuGreen.png') no-repeat;
-	-pie-background: transparent url('../Assets/Assets02/Icons/Arrows/HamburgerMenuGreen.png') no-repeat;
+	background: transparent url('../Assets/Assets02/Icons/Arrows/HamburgerMenuBlack.png') no-repeat;
+	-pie-background: transparent url('../Assets/Assets02/Icons/Arrows/HamburgerMenuBlack.png') no-repeat;
 	title: "open/close navigation menu";
 }
 

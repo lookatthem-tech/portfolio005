@@ -17,8 +17,8 @@ h1
 	font-weight: bold;
 	line-height: 50px;
 	position: relative;
-	color: #337373;
-	text-shadow: 1px 1px #9fa1a0;
+	color: white;
+	text-shadow: 1px 1px #141f1f;
 }
 
 h2
@@ -29,9 +29,9 @@ h2
 	font-size: 32px;
 	font-weight: normal;
 	line-height: 30pt;
-	color: #337373;
+	color: white;
 	position: relative;
-	text-shadow: 1px 1px #9fa1a0;
+	text-shadow: 1px 1px #141f1f;
 }
 
 div.AboutBoxHome
@@ -407,14 +407,14 @@ div.topic-hero	/*This is the Hero/Banner on the Home Page - To replace the banne
 div.topic-hero::before
 {
 	content: "";
-	background-image: url('../Assets/HeroBg.png');
+	background-image: url('../Assets/HeroImage007.jpg');
 	background-size: cover;
 	position: absolute;
 	top: 0px;
 	right: 0px;
 	bottom: 0px;
 	left: 0px;
-	opacity: 0.3;
+	opacity: 0.6;
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center 0;
