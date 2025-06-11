@@ -1,0 +1,3453 @@
+/*<meta />*/
+
+/*==BEGIN importing google fonts so that all users can see them==*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+
+/*==END importing google fonts so that all users can see them==*/
+
+
+
+
+
+
+.title-bar-layout a.logo /* This controls the header logo (in addition to details in the skin). */
+{
+top: 0;
+margin: 0;
+width: 160px;
+height: 56px;
+align-self: center;
+background: transparent url('../HeroImage/LS_SysTrackWhiteOrangeSm4.png') no-repeat center center;
+}
+
+
+
+
+
+p.InternalSiteIndicator
+{
+	font-size: 14px;
+	color: white;
+	background-color: #808080;
+	max-width: 250px;
+	padding-right: 3px;
+	padding-left: 17px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-bottom: 30px;
+	margin-top: 60px;
+}
+
+
+
+@media only screen and (min-width: 1200px) 
+{
+
+/* This item makes the Topics In This Section piece on the landing pages 
+appear ONLY at sizes when the left nav does NOT appear. */
+div.TopicsInThisSection
+{
+display: none;
+}
+	
+
+/* This makes the search results page appropriately wider at 
+large window sizes */
+#searchPane 
+{
+   margin-left: -20%;
+   
+}
+
+}
+
+
+
+
+/* This makes the links on the search results page larger */
+#resultList h3.title a 
+
+{
+    color: #1a1aff;
+    font-size: 18px;
+}
+
+
+
+/* .templateTopic is a way to customize the appearance of the search results page. 
+For example, this one with .bread hides the div for breadcrumbs on the search results page. */
+.templateTopic .bread 
+{
+    display: none;
+}
+
+
+/* This hides the entire right nav On This Page TOC only on the Search Results page.*/
+.templateTopic .RightNavPageToc
+{
+    display: none;
+}
+
+
+
+
+
+/* This controls the page numbers and next and previous links on the search results page. */
+#pagination a 
+{
+    border-left: solid 1px #1a1aff;
+    border-right: solid 1px #1a1aff;
+    border-top: solid 1px #1a1aff;
+    border-bottom: solid 1px #1a1aff;
+    color: #1a1aff;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+
+/* This controls the page numbers and next and previous links on the search results page. */
+#pagination a#hover
+{
+    border: solid 1px #1a1aff;
+    color: #1a1aff;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+/* This controls the page numbers and next and previous links on the search results page. */
+#pagination a#selected
+{
+    border-left: solid 1px #1a1aff;
+    border-right: solid 1px #1a1aff;
+    border-top: solid 1px #1a1aff;
+    border-bottom: solid 1px #1a1aff;
+    color: #1a1aff;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+
+
+
+/* This is needed to prevent the hamburger menu from showing 
+extra parent items at the bottom as you drill down into child submenus.
+This appears to be a madcap bug and/or is the result of us having a LOT of items 
+at the top level of our TOC. */
+.is-drilldown-submenu.slide-in-left.is-active 
+{
+height: 150%;
+}
+
+
+
+
+
+
+body
+{
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 21px;
+	color: #000000;
+	background-color: transparent;
+}
+
+
+.invisible-label /* If this is set to height of 1px, we have the single white pixel 
+in the top header bar that we had before the redesign. Adding display: none is what 
+removes the pixel. The white pixel was too glaringly visible. */
+
+{
+    height: 0px;
+    font-size: 0px;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+@media print
+{
+	body
+	{
+		font-family: calibri;
+		font-size: 14px;
+	}
+}
+
+
+
+
+ul.menu._Skins_SideMenuFixed03.mc-component
+{
+	margin-top: 44px;
+
+}
+
+
+/*
+.sticky.is-stuck  This helps the left menu to NOT overlap the footer when the menu is very long  
+{
+	position: fixed;
+    z-index: 0;
+}
+*/
+
+
+/*
+.sticky.is-anchored {
+    position: absolute;
+    left: auto;
+    right: auto;
+    z-index: 0;
+}
+*/
+
+
+
+ul.menu._Skins_SideMenuFixed03.mc-component li > a.selected
+{
+	border-right: 0px solid limegreen;
+
+}
+
+
+
+
+
+
+/*==  This helps to place BOTH the logo and the Search bar in exactly the right places  ==*/
+
+.off-canvas-wrapper-inner nav.title-bar .outer-row 
+
+{
+  padding: 0 1em;
+  padding-left: 50px;
+  padding-right: 30px;
+  max-width: 100%;
+}
+
+/*==  END  ==*/
+
+
+
+
+
+
+
+
+
+
+.search-bar .search-filter
+{
+	display: none;
+}
+
+
+
+
+
+span.Bold
+{
+ font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/*==START footer styles==*/
+
+
+
+p.FooterLogo 
+{
+    margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 12%;
+    font-size: 15px;
+    color: white;
+	text-align: left;
+}
+
+p.footer 
+{
+    margin-top: 0px;
+	padding-top: 0px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    color: white;
+	text-align: left;
+	height: 20px;
+}
+
+p.FooterBodyLeft 
+{
+    margin-top: -5px;
+	margin-bottom: 0px;
+	font-size: 15px;
+    color: white;
+	text-align: left;
+}
+
+p.FooterBodyRight 
+{
+    margin-top: 0px;
+	margin-bottom: 0px;
+	padding-right: 12%;
+    font-size: 15px;
+    color: white;
+	text-align: right;
+}
+
+
+
+
+
+
+
+div.ArticleOnlyFooter /* This is specific to the article footer  */
+{
+	
+    background-color: #f7faff;
+	margin-top: 12px;
+	margin-bottom: 0px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	width: 100%;
+	position: sticky;
+    bottom: 0;
+}
+
+
+p.ArticleFooterBodyLeft  /* This is specific to the article footer  */
+{
+    margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 15px;
+    color: black;
+	background-color: #f7faff;
+	text-align: center;
+}
+
+
+
+
+.FooterGridContainerMain
+{
+	display: inline-grid;
+	grid-template-columns: auto auto auto;
+	position: sticky;
+	bottom: 0;
+	background-color: #1f2554; 
+	padding-top: 33px;
+	padding-bottom: 33px;
+	width: 100%;
+	margin-left: 0;
+	gap: 27%;
+}
+
+.FooterGridItemMain
+{
+	background-color: #1f2554;
+	padding: 0px;
+	color: white;
+}
+
+div.FooterGridItemMain a	/*Complex Selector: Links within the home tiles will have the following properties*/
+{
+	text-decoration: none;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	color: inherit;
+}
+
+div.FooterGridItemMain a:hover	/*The heading and the image on the tiles are the only links. So this is the color of the heading.*/
+{
+	color: #9cec5b;
+}
+
+
+p.FooterLogo > a > img 
+	{
+		height: 28px;
+		margin-bottom: 0px;
+		border: none;
+		box-shadow: none;
+		
+	}
+
+p.FooterBodyLeft > a > img
+	{
+		height: 32px;
+		margin-bottom: 0px;
+		border: none;
+		box-shadow: none;
+		
+	}
+	
+	
+p.FooterBodyRight > a > img
+	{
+		height: 32px;
+		margin-bottom: 0px;
+		border: none;
+		box-shadow: none;
+		
+	}	
+	
+	
+
+
+
+
+/* Small screen devices (1010px and below) */
+
+@media only screen and (max-width: 1010px)
+{
+	.FooterGridContainerMain
+	{
+		display: block;
+	}
+
+	.FooterGridItemMain
+	{
+		margin-bottom: 0px;
+	}
+	
+	
+	p.FooterBodyRight 
+{
+    text-align: left;
+}
+	
+	
+	
+}
+
+/*==END footer styles==*/
+
+
+
+
+
+
+/*==BEGIN accessibility styles==*/
+
+:focus
+{
+	outline: 0px solid #80ccff;
+	outline-offset: 1px;
+}
+
+/*==END accessibility styles==*/
+/*==BEGIN customizations to HTML5TopNav skin that aren't available in MCFlare skin editor==*/
+
+nav.tab-bar
+{
+	/*	border-bottom: black; */
+	box-shadow: 0px 0px 3px #6e7271;
+}
+
+nav.title-bar
+{
+	/*	background: black; */
+}
+
+/*==END customizations to HTML5TopNav skin that aren't available in MCFlare skin editor==*/
+
+a.TopOfPageButton
+{
+	position: fixed;
+	background-image: url('../Assets/Assets02/Icons/Arrows/TopPg25.png');
+	margin: 0;
+	top: 93%;
+	right: 93%;
+	z-index: 0;
+	background-repeat: no-repeat;
+	padding-bottom: 15%;
+	padding-top: 0;
+	padding-right: 5%;
+	padding-left: 0;
+	opacity: .6;
+	display: inline-block;
+	color: transparent;
+	font-size: 0pt;
+	overflow: hidden;
+	height: 40px;
+	width: 40px;
+}
+
+a
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	color: blue;
+}
+
+
+
+
+
+@media print
+{
+	/* Use this (instead of a or xref) to format links that need to appear as links in HTML but as plain text in Print outputs */
+
+	a.unbindInPDF
+	{
+		font-family: calibri;
+		font-size: 11pt;
+		font-weight: bold;
+		mc-exclude-action: 'unbind';
+		mc-conditions: 'ConditionTags.unbindInPDF';
+	}
+}
+
+@media print
+{
+	/* Use this for Print title pages. This is the style for any descriptive text you want to add below the title on the title page.
+ This style limits the width of the paragraph so that the title page looks better. */
+
+	div.TitlePgDescription
+	{
+		width: 400px;
+	}
+}
+
+b
+{
+	font-weight: 700;
+}
+
+fieldlist
+{
+	font-weight: 700;
+	color: #0A75C2;
+}
+
+MadCap|expanding
+{
+	mc-open-image: url('resources:Images/WebHelp/minus.png');
+	mc-closed-image: url('resources:Images/WebHelp/plus.png');
+	mc-image-position: left;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+/**************************************************************************************************************** 
+The following styles are needed to change the color of the arrows 
+and other details of the side menu (hamburger menu)
+*****************************************************************************************************************/
+
+.title-bar .menu-icon span
+{
+	background: transparent url('../Assets/Assets02/Icons/Arrows/HamburgerMenuBlack.png') no-repeat;
+	-pie-background: transparent url('../Assets/Assets02/Icons/Arrows/HamburgerMenuBlack.png') no-repeat;
+	title: "open/close navigation menu";
+}
+
+nav.title-bar .menu-icon	/* Use this to move the hamburger menu button */
+{
+	right: auto;
+	margin-top: 10px;
+	margin-left: -25px;
+}
+
+div.logo-wrapper	/* Use this (instead of the TopNav skin) to move the logo */
+{
+	width: 333px;
+	margin-top: 3px;
+	margin-left: 2%;
+}
+
+
+
+
+
+#header-links    /* This works with the javascript and text in TemplateArticles.flmsp to control the Internal Site header text */
+{
+	background-color: transparent;
+	color: white;
+	font-size: 18px;
+	font-family: 'Manrope';
+	font-weight: 700;
+	padding-top: 16px;
+	padding-left: 0px;
+	padding-right: 0px;
+	z-index: 2000;
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 180px;
+}
+
+
+
+/* For extremely small screen devices (650px and below) */
+
+@media only screen and (max-width: 650px)
+{
+#header-links
+{
+	display: none;
+}
+}
+
+
+
+
+div.search-filter-content	/* Use this style the search filter dropdown menu */
+{
+	background-color: white;
+	box-shadow: 0 6px 9px -4px #03153b;
+}
+
+@media screen and (max-width: 1279px)
+{
+	nav.title-bar .menu-icon
+	{
+		right: auto;
+		margin-top: 10px;
+		margin-left: -3px;
+	}
+
+	div.logo-wrapper	/* Use this (instead of the TopNav skin) to move the logo */
+	{
+		margin-left: 60px;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 767px)
+{
+	nav.title-bar .menu-icon
+	{
+		right: auto;
+		margin-top: 10px;
+		margin-left: 3px;
+	}
+
+	div.logo-wrapper	/* Use this (instead of the TopNav skin) to move the logo */
+	{
+		margin-top: 6px;
+		margin-left: 18%;
+		margin-right: auto;
+	}
+
+
+}
+
+
+/* Removes the default arrow/triangle */
+/*
+.is-accordion-submenu-parent > a span.submenu-toggle	
+{
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border: inset 6px;
+	border-color: #fff transparent transparent;
+	border-top-style: solid;
+	border-bottom-width: 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -4px;
+	right: 0.6667rem;
+}
+
+html[dir='rtl'] .is-accordion-submenu-parent > a span.submenu-toggle
+{
+	right: inherit;
+	left: 0.6667rem;
+}
+*/
+
+
+
+
+
+.position-left.is-open 
+{
+    left: 0;
+    width: 400px;
+}
+
+.is-open-left .js-off-canvas-exit 
+{
+    right: -400px;
+}
+
+/*End custom styles for hamburger menu*/
+
+
+
+
+
+/************************ styles for article container BEGIN***************************/
+
+
+
+div.bread 
+{
+margin-left: 8px;
+margin-top: 0px;
+padding-top: 10px;
+margin-bottom: 22px;
+width: 100%;
+float: left;
+background-color: transparent;
+}
+
+
+
+@media screen and (max-width: 1279px)
+{
+	div.bread
+	{
+	border-bottom: 1px solid #1f2554;
+	}
+}   
+
+
+/* For extremely small screen devices (650px and below) */
+
+@media only screen and (max-width: 650px)
+{
+div.bread
+{
+	display: none;
+}
+}
+
+
+
+
+
+
+div.rr-article-body
+{
+	mc-grid-row: true;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+	
+}
+
+div.rr-article-body::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.rr-article-body::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.rr-article-body > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-left: 0px;
+}
+
+div.rr-article-body > div:nth-child(1)
+{
+	width: 23%;
+	margin-left: 0%;
+	margin-bottom: 2%;
+	/* position: fixed;   It's critical for this to remain as "fixed" so that the menus don't overlap other page elements */
+}
+
+div.rr-article-body > div:nth-child(2)
+{
+	width: 55%;
+	margin-left: 1%;
+	margin-bottom: 2%;
+}
+
+div.rr-article-body > div:nth-child(3) /*This is the right nav div with the page TOC. It is also styled by class RightNavPageToc.*/
+{
+	width: 20%;
+	margin-left: 1%;
+	margin-bottom: 2%;
+ /*	position: fixed;  It's critical for this to remain as "fixed" so that the menus don't overlap other page elements */
+}
+
+
+ul.menu._Skins_PageTocRightSide.mc-component a.selected  /*This adds the proper spacing and the left border to the "selected" item in right nav. */
+{
+border-left: 3px solid darkviolet;
+margin-left: -12px;
+padding-left: 8px;
+}
+
+
+ul.menu._Skins_PageTocRightSide.mc-component 
+{
+margin-top: 114px;
+padding-top: 0px;
+}
+
+
+
+div.RightNavPageToc > p.PageTOCOnThisPage	/*This is required to add the On This Page heading inside the On This Page toc (right nav).*/
+{
+	font-size: 14px;
+	font-weight: 500;
+	padding-left: 12px;
+	padding-right: auto;
+	width: 20%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-top: 48px;
+	background-color: #f7faff;
+	color: black;
+	position: fixed;
+	right: auto;
+}
+
+
+ul.menu.mc-component /*This controls whether the page toc on right nav gets compressed and has scrollbars. */
+{
+    overflow-y: visible;
+	/*	position: sticky;  REMOVE THIS ??? */
+ /*   right: auto; REMOVE THIS ??? */
+}
+
+
+
+
+
+div.content-container	/* Wraps the content on the masterpage and provides the white background behind topics. */
+{
+	margin-right: 0;
+	background-color: white;
+	padding-top: 0px;
+	padding-right: 25px;
+	padding-left: 30px;
+	padding-bottom: 0px;
+	min-height: 85vh;
+	position: sticky;
+    bottom: 0;
+}
+
+
+.height-container-sidenav 
+{
+    padding-bottom: 0px; /* If you change this from 0px, it starts to move the footer in unwanted directions. */
+}
+
+
+
+
+div#mc-main-content /* This had to be added as custom to the css. Styling the content-container above is not enough.
+                       Post-build, Flare adds this mc-main-content. If you don't add it to the css and style it, you can't
+					   control the article body height. */
+
+{
+    min-height: 85vh; 
+}
+
+
+
+
+
+
+@media screen and (max-width: 1279px)
+{
+	div.rr-article-body > div:nth-child(1)
+	{
+		display: none;
+	}
+
+	div.rr-article-body > div:nth-child(2)
+	{
+		width: 98%;
+		margin-bottom: 2%;
+		margin-left: 2%;
+	}
+	
+	
+	div.rr-article-body > div:nth-child(3) /*This is the far right div with the page TOC. It is also styled by class RightNavPageToc.*/
+    {
+	  display: none;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+	div.rr-article-body > div:nth-child(1)
+	{
+		display: none;
+	}
+
+	div.rr-article-body > div:nth-child(2)
+	{
+		width: 98%;
+		margin-bottom: 2%;
+		margin-left: 2%;
+	}
+	
+	div.rr-article-body > div:nth-child(3) /*This is the far right div with the page TOC. It is also styled by class RightNavPageToc.*/
+    {
+	  display: none;
+    }
+}
+
+@media print
+{
+	div.rr-article-body > div:nth-child(1)
+	{
+		display: none;
+	}
+
+	div.rr-article-body > div:nth-child(2)
+	{
+		width: 98%;
+		margin-bottom: 2%;
+		margin-left: 2%;
+	}
+	
+	div.rr-article-body > div:nth-child(3) /*This is the far right div with the page TOC. It is also styled by class RightNavPageToc.*/
+    {
+	  display: none;
+    }
+}
+
+/************************ styles for article container END***************************/
+
+
+
+
+
+/**************************************************************************************************************** 
+This format looks like a button but is just text. Use this instead of graphical buttons in most places. 
+NOTE: You might need to apply local formatting to links in each file to remove the underline and make the font white.
+*****************************************************************************************************************/
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 7px 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #9cec5b;
+    color: #1f2554;
+    position: relative;
+	line-height: 38px;
+}
+
+/************************ Buttons END ***************************/
+
+
+
+
+
+
+
+
+
+/**************************************************************************************************************** 
+h2.landing style works with the mini toc style to make the list of topics on each landing page. The h2.landing 
+heading should always use the text "Topics in this section"
+*****************************************************************************************************************/
+
+h2.landing
+{
+	font-size: 23px;
+	color: white;
+    background-color: #1f2554;
+	max-width: 450px;
+	margin-bottom: 0px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 12px;
+	mc-heading-level: 0;
+}
+
+
+h2.landing::before 
+{
+    display: none;
+}
+
+
+
+MadCap|miniTocProxy
+{
+	border-radius: 0px;
+	border-top: solid 0px transparent;
+	box-shadow: 0;
+	padding: 12px;
+	margin-bottom: 14px;
+	margin-top: 0px;
+	overflow: hidden;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 15px;
+	font-variant: normal;
+	line-height: 20px;
+	max-width: 450px;
+	background-color: #f7faff;
+}
+
+/************************ landing page topic list END ***************************/
+
+
+/************************************************************************* 
+
+                           API headings START
+
+**************************************************************************/
+
+
+
+
+h2.border
+{
+	margin-top: 70px;
+	padding-top: 60px;
+	margin-bottom: 25px;
+	border-top: solid 2px #4f566b;
+	font-size: 21px;
+	line-height: 31px;
+}
+
+
+h2.border::before 
+{
+    display: none;
+}
+
+
+
+h3.Api
+{
+	mc-heading-level: 3;
+	page-break-after: avoid;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-family: 'Manrope';
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 31px;
+	color: #1f2554;
+}
+
+
+h3.Api::before 
+{
+    display: none;
+}
+
+
+
+
+
+span.get
+{
+	background-color: #4d4dff;
+	border: 3px solid #4d4dff;
+	border-radius: 3px;
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 3px;
+	margin-right: 4px;
+	color: white;
+	font-family: Courier;
+	text-transform: uppercase;
+}
+
+
+
+span.post
+{
+	background-color: green;
+	border: 3px solid green;
+	border-radius: 3px;
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 3px;
+	margin-right: 4px;
+	color: white;
+	font-family: Courier;
+	text-transform: uppercase;
+}
+
+
+span.delete
+{
+	background-color: darkred;
+	border: 3px solid darkred;
+	border-radius: 3px;
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 3px;
+	margin-right: 4px;
+	color: white;
+	font-family: Courier;
+	text-transform: uppercase;
+}
+
+span.put
+{
+	background-color: #e68a00;
+	border: 3px solid #e68a00;
+	border-radius: 3px;
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 3px;
+	margin-right: 4px;
+	color: white;
+	font-family: Courier;
+	text-transform: uppercase;
+}
+
+
+h4.request
+{
+vertical-align: baseline;
+	text-decoration: none;
+	font-size: 17px;
+	line-height: 27px;
+	margin: 0;
+	font-family: 'Manrope';
+	font-weight: 700;
+	color: #1f2554;
+	mc-heading-level: 4;
+	page-break-after: avoid;
+    margin-top: 35px;
+	margin-bottom: 20px;
+}
+
+h4.response
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-size: 17px;
+	line-height: 27px;
+	margin: 0;
+	font-family: 'Manrope';
+	font-weight: 700;
+	color: #1f2554;
+	mc-heading-level: 4;
+	page-break-after: avoid;
+    margin-top: 35px;
+	margin-bottom: 20px;
+}
+
+
+/************************ API headings END ***************************/
+
+
+
+
+
+
+
+
+/************************************************************************* 
+
+The following styles are for accordion dropdown sections.
+
+**************************************************************************/
+
+
+
+
+
+@media print
+{
+	.MCDropDown.dropDown:last-of-type
+	{
+		margin-bottom: 5px;
+	}
+}
+
+@media print
+{
+	MadCap|dropDownHead
+	{
+		vertical-align: baseline;
+		text-decoration: none;
+		line-height: normal;
+		mc-heading-level: 3;
+		page-break-after: avoid;
+		font-family: "Open Sans";
+		font-weight: bold;
+		font-size: 20px;
+		margin-bottom: 5px;
+		margin-top: 5px;
+		color: #3B3B3B;
+	}
+}
+
+
+
+
+
+
+
+.MCDropDown.dropDown
+{
+	margin-bottom: 18px;
+	width: 100%;
+}
+
+
+
+
+
+.MCDropDown.dropDown:last-of-type
+{
+	margin-bottom: 20px;
+}
+
+
+
+.MCDropDown_Image_Icon /* For some reason, only in this Flare project, Flare adds a ghost image that does not exist to the dropdown heads. This style removes that. 
+This is a known Flare bug, according to forums. */
+{
+    display: none;
+}
+
+
+
+
+.MCDropDown.dropDown a.dropDownHotspot
+{
+	color: white;
+	vertical-align: middle;
+	display: block;
+	padding: 12px 0;
+	border-bottom: 0px solid red;
+	background-image: none;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+
+
+@media mobile
+{
+	.MCDropDown.dropDown a.dropDownHotspot
+	{
+		font-size: 15px;
+	}
+}
+
+
+
+
+.MCDropDown.dropDown.MCDropDown_Open a.dropDownHotspot
+{
+	border-bottom: none;
+}
+
+.MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage,
+.MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage
+
+{
+	background-image: none;
+	
+}
+
+.MCDropDown.dropDown.MCDropDown_Closed a.dropDownHotspot:before,
+.MCDropDown.dropDown.MCDropDown_Open .MCDropDown_Closed a.dropDownHotspot:before
+{
+	content: url('../HeroImage/ArrowDownWhite.png');
+	padding-top: 3px;
+	padding-right: 8px;
+	margin-left: 8px;
+}
+
+.MCDropDown.dropDown.MCDropDown_Closed a.dropDownHotspot:hover
+{
+	background-color: #4775d1;
+	color: white;
+}
+
+.MCDropDown.dropDown.MCDropDown_Open a.dropDownHotspot:hover
+{
+	background-color: #4775d1;
+	color: white;
+}
+
+.MCDropDown.dropDown.MCDropDown_Open a.dropDownHotspot:before
+{
+	content: url('../HeroImage/ArrowUpWhite.png');
+	padding-top: 3px;
+	padding-right: 8px;
+	margin-left: 8px;
+}
+
+.MCDropDown.dropDown.MCDropDown_Open a.dropDownHotspot
+{
+	background-color: #27376c;
+	color: white;
+}
+
+.MCDropDown.dropDown.MCDropDown_Closed a.dropDownHotspot
+{
+	background-color: #8890AD;
+	color: white;
+}
+
+.MCDropDownBody
+{
+	padding: 0 10px;
+	background-color: white;
+	transition: max-height 0.5s ease-out;
+}
+
+@media print
+{
+	MadCap|dropDownBody
+	{
+		margin-bottom: 0px;
+		width: 100%;
+	}
+}
+
+
+/************************************************************************* 
+
+END styles for accordion dropdown sections.
+
+**************************************************************************/
+
+
+
+
+
+
+/*Styles for code and GET, etc. in headings begin here*/
+
+
+
+
+.InlineCode
+{
+	font-family: Courier;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 30px;
+	color: black;
+	background-color: #d9dbde;
+	border-radius: 6px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 3px;
+}
+
+
+
+
+
+
+
+
+div.ApiRequestSyntax
+{
+	display: inline-block;
+	font-family: Courier;
+	font-weight: 400;
+	font-size: 15px;
+	color: black;
+	background-color: #d9dbde;
+	border-radius: 6px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-top: 9px;
+	padding-bottom: 7px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+p.ApiRequestSyntax
+{
+	font-family: Courier;
+	font-weight: 400;
+	font-size: 15px;
+	color: black;
+	background-color: #d9dbde;
+	border-radius: 6px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-top: 9px;
+	padding-bottom: 7px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+
+
+
+MadCap|codeSnippet
+{
+background-color: #d9dbde;
+vertical-align: baseline;
+text-decoration: none;
+font-variant: normal;
+font-family: 'Courier';
+font-size: 15px;
+color: black;
+line-height: 16px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 5px;
+overflow: auto;
+border: 3px solid #d9dbde;
+border-radius: 7px;
+}
+
+
+
+.code 
+{
+background-color: #d9dbde;
+vertical-align: baseline;
+text-decoration: none;
+font-variant: normal;
+font-family: 'Courier';
+font-size: 15px;
+color: black;
+line-height: 16px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 5px;
+padding-right: 5px;
+border-radius: 5px;
+overflow: auto;
+}
+
+
+
+
+
+@media only screen and (max-width: 1279px)
+{
+	div.code
+	{
+		margin-right: 1%;
+		
+	}
+}
+
+@media only screen and (max-width: 900px)
+{
+	div.code
+	{
+		margin-right: 1%;
+		
+	}
+}
+
+
+
+
+
+div.codeSnippetCaption
+{
+	font-size: 17px;
+	font-weight: 700;
+	font-family: 'Manrope';
+	color: white;
+	display: none; /*This is currently set to HIDE the code captions because of the madcap bug. Set it back to block to unhide.*/
+	float: right;
+	border: 0px solid red;
+	margin-top: 0px;
+	padding-top: 0px;
+	
+}
+
+
+a.codeSnippetCopyButton
+{
+	float: left;
+	display: none; /*This is currently set to HIDE the copy buttons because of the madcap bug. Set it back to block to unhide.*/
+	padding: 5px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	page-break-after: avoid;
+	page-break-before: avoid;
+	font-family: 'Manrope';
+	font-size: 12px;
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+	background-color: black;
+	border: 4px solid black;
+	border-radius: 5px;
+	box-shadow: none;
+}
+
+
+div.codeSnippet > a, a:hover, a:active, a:focus, a:visited
+{
+
+	color: white;
+	text-decoration: none;
+	text-transform: none;
+}
+
+div.codeSnippet > a:hover
+{
+
+	color: white;
+	
+}
+
+
+
+/*Styles for code and GET, etc. in headers end here*/
+
+
+
+
+
+
+
+MadCap|toggler
+{
+	mc-open-image: url('resources:Images/WebHelp/minus.png');
+	mc-closed-image: url('resources:Images/WebHelp/plus.png');
+	color: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|popupHead
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	color: #ffffff;
+	font-family: Roboto;
+	font-weight: 300;
+}
+
+MadCap|popupBody
+{
+	width: 300px;
+	vertical-align: baseline;
+	text-decoration: none;
+	box-shadow: none;
+	background-color: #333;
+	border: none 0px #000000;
+	color: #ffffff;
+	text-align: justify;
+}
+
+@media screen and (max-width: 1279px)
+{
+	MadCap|popupBody
+	{
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 767px)
+{
+	MadCap|popupBody
+	{
+		width: 200px;
+	}
+}
+
+Madcap|PopupArrow
+{
+	display: normal;
+	color: #ff0000;
+}
+
+MadCap|glossaryTerm
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	color: black;
+	font-weight: bold;
+}
+
+MadCap|glossaryTerm.Expanding
+{
+	color: inherit;
+	font-weight: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|glossaryTerm.Hyperlink
+{
+	color: black;
+	font-weight: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|glossaryTerm.Popup
+{
+	color: blue;
+	font-weight: normal;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	mc-closed-image: none;
+	mc-open-image: none;
+	mc-image-spacing: 0px;
+}
+
+
+
+/**************************************************************************************************************** 
+The following glossary items are needed so that we can control the look of the actual glossary page. 
+*****************************************************************************************************************/
+
+div.GlossaryPageTerm
+
+{
+    font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 21px;
+	color: #1d1d21;
+}
+
+
+div.GlossaryPageDefinition
+
+{
+    font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 21px;
+	color: #1d1d21;
+}
+
+
+ul.MCGlossaryProxy_Footer_0 
+{
+    border-top-width: 0px;
+    border-top-style: solid;
+    border-top-color: green;
+    padding-top: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+
+li.GlossaryPageEntry
+{
+    
+	margin-left: 40px;
+    padding-left: 0px;
+	
+}
+
+
+div.GlossaryPageHeading_0 
+{
+    background: #2962f5;
+	color: white;
+    text-decoration: none;
+	font-size: 22px;
+    font-variant: normal;
+	font-family: "Open Sans", Arial, sans-serif;
+    display: block;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+	margin-left: 0;
+	padding-left: 20px;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    width: 100%;
+	border: 0px;
+    
+}
+
+
+
+a.GlossaryPageLink 
+{
+    font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 21px;
+	color: #1d1d21;
+}
+
+a.GlossaryPageLink:hover 
+{
+    font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 21px;
+	color: #1d1d21;
+	text-decoration: none;
+    
+}
+
+
+
+/**********END the custom extra glossary page styles*********************/
+
+
+
+
+
+
+
+p
+{
+	text-decoration: none;
+	font-variant: normal;
+	margin: 0;
+	margin-bottom: 14px;
+	margin-top: 14px;
+}
+
+@media print
+{
+	p
+	{
+		margin-bottom: 7px;
+		margin-top: 7px;
+	}
+}
+
+
+
+
+
+
+h1
+{
+	vertical-align: baseline;
+	margin-bottom: 35px;
+	margin-top: 45px;
+	mc-heading-level: 1;
+	page-break-after: avoid;
+	font-family: 'Manrope';
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 40px;
+	color: white;
+    background-color: #1f2554;
+    padding-left: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	display: flex;
+}
+
+
+
+/* For extremely small screen devices (650px and below) */
+
+@media only screen and (max-width: 650px)
+{
+h1
+{
+	margin-top: 10px;
+}
+}
+
+
+
+
+
+
+
+
+@media print
+{
+	h1
+	{
+		font-family: calibri;
+		font-weight: bold;
+		font-size: 27px;
+		margin-bottom: 15px;
+		color: #3B3B3B;
+		border-bottom: 0px solid #669696;
+	}
+}
+
+h1.RNsHeading1
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 33px;
+	margin-bottom: 15px;
+	color: #3B3B3B;
+	mc-heading-level: 0;
+	page-break-after: avoid;
+}
+
+
+
+h2
+{
+	margin: 0px;
+	mc-heading-level: 2;
+	page-break-after: avoid;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-family: 'Manrope';
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 36px;
+	color: #1f2554;
+}
+
+
+h2::before 
+{
+    background-color: #f24822;
+    content: "";
+    display: block;
+    height: 6px;
+    margin: 3px 0px;
+    width: 88px;
+}
+
+
+
+
+@media print
+{
+	h2
+	{
+		
+		font-weight: bold;
+		font-size: 22px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		color: #1f2554;
+	}
+}
+
+h3
+{
+	mc-heading-level: 3;
+	page-break-after: avoid;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-family: 'Manrope';
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 31px;
+	color: #1f2554;
+}
+
+
+h3::before 
+{
+    background-color: #27b2ff;
+    content: "";
+    display: block;
+    height: 6px;
+    margin: 3px 0px;
+    width: 88px;
+}
+
+
+
+@media print
+{
+	h3
+	{
+		
+		font-weight: bold;
+		font-size: 20px;
+		color: #3B3B3B;
+	}
+}
+
+h4
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-size: 17px;
+	line-height: 27px;
+	margin: 0;
+	font-family: 'Manrope';
+	font-weight: 700;
+	color: #1f2554;
+	mc-heading-level: 4;
+	page-break-after: avoid;
+    margin-top: 35px;
+	margin-bottom: 20px;
+}
+
+@media print
+{
+	h4
+	{
+		
+		font-weight: bold;
+		font-size: 17px;
+		color: #3B3B3B;
+	}
+}
+
+h5
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-family: 'Manrope';
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	color: #1f2554;
+	mc-heading-level: 5;
+	page-break-after: avoid;
+}
+
+@media print
+{
+	h5
+	{
+		
+		font-weight: bold;
+		font-size: 15px;
+		margin-bottom: 2px;
+		margin-top: 0px;
+		color: #3B3B3B;
+	}
+}
+
+h6
+{
+	text-decoration: none;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 5px;
+	margin-bottom: 10px;
+	margin: 0;
+	margin-top: 10px;
+	color: #1f2554;
+	page-break-after: avoid;
+	mc-heading-level: 6;
+}
+
+@media print
+{
+	h6
+	{
+		
+		font-weight: bold;
+		font-size: 14px;
+		margin-bottom: 2px;
+		margin-top: 0px;
+		color: #3B3B3B;
+	}
+}
+
+::marker
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+::before
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+::after
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageFooter.OddPage
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageFooter.FirstPage
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageFooter.EvenPage
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageFooter
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageHeader.OddPage
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageHeader.FirstPage
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageHeader.EvenPage
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|pageHeader
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+MadCap|shortcut
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	color: blue;
+}
+
+MadCap|xref
+{
+	font-variant: normal;
+	text-decoration: none;
+	color: #1a1aff;
+}
+
+@media print
+{
+	MadCap|xref
+	{
+		
+		font-size: 11pt;
+	}
+}
+
+MadCap|xref:hover
+{
+	font-variant: normal;
+	color: #3333cc;
+	text-decoration: underline;
+}
+
+MadCap|xref:focus
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: none;
+	color: #3333cc;
+}
+
+MadCap|menuProxy
+{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: transparent;
+	overflow: visible;  /* Is this CORRECT??? It was set to hidden. */
+}
+
+@media mobile
+{
+	MadCap|menuProxy
+	{
+		display: none;
+	}
+}
+
+MadCap|searchBarProxy
+{
+	text-decoration: none;
+	height: 20;
+	font-size: 10pt;
+	margin-bottom: 20px;
+}
+
+MadCap|tocProxy
+{
+	text-decoration: none;
+	font-variant: normal;
+	clear: right;
+	border-top: 2px solid #669696;
+}
+
+MadCap|topicToolbarProxy
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	background-color: transparent;
+}
+
+@media print
+{
+	MadCap|topicToolbarProxy
+	{
+		display: none;
+	}
+}
+
+div.TopicToolbarSpaceAfter
+{
+	margin-bottom: 25px;
+}
+
+@media print
+{
+	div.TopicToolbarSpaceAfter
+	{
+		display: none;
+	}
+}
+
+@media print
+{
+	div.button-group-container-left
+	{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+div.CustomToolbar
+{
+	
+    background-color: #f7faff;
+	margin-top: 44px;
+	margin-bottom: 0px;
+	padding-top: 15px;
+	padding-bottom: 30px;
+	width: 100%;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px)
+
+{
+
+
+
+div.buttons._Skins_PgPrevToolbar.mc-component
+{
+	margin-left: 1%;
+	float: left;
+}
+
+
+div.buttons._Skins_PgPrintToolbar.mc-component
+{
+	margin-left: 34%;
+}	
+
+	
+div.buttons._Skins_PgNextToolbar.mc-component
+{
+	margin-right: 1%;
+	float: right;
+}	
+
+
+
+div.button-group-container-left
+{
+float: right;
+margin-left: 0px;
+}
+
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 600px)
+
+{
+
+
+
+div.buttons._Skins_PgPrevToolbar.mc-component
+{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 33px;
+	float: none;
+}
+
+
+div.buttons._Skins_PgPrintToolbar.mc-component
+{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 33px;
+}	
+
+	
+div.buttons._Skins_PgNextToolbar.mc-component
+{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	float: none;
+}	
+
+}
+
+
+
+
+
+
+
+
+
+MadCap|breadcrumbsProxy
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	border-bottom-color: transparent;
+	mc-breadcrumbs-count: 14;
+	mc-breadcrumbs-prefix: ' ';
+	font-size: 14px;
+	margin-top: 0px;
+	background-color: white;
+}
+
+
+@media print
+{
+MadCap|breadcrumbsProxy
+{
+display: none;
+}
+}
+
+
+
+span.MCBreadcrumbsDivider
+{
+	color: black;
+}
+
+span.MCBreadcrumbsSelf
+{
+	display: none;
+}
+
+a.MCBreadcrumbsLink:visited
+{
+	color: #333;
+}
+
+MadCap|bodyProxy
+{
+	text-decoration: none;
+	font-variant: normal;
+	min-height: 85vh;
+	vertical-align: baseline;
+}
+
+br::before
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	margin-top: 14px;
+}
+
+br
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+
+.button.collapse-all-button
+{
+	margin-left: 0px;
+}
+
+.button.expand-all-button
+{
+	margin-left: 0px;
+}
+
+
+
+li
+{
+	text-decoration: none;
+	font-variant: normal;
+	margin-bottom: 14px;
+	margin-top: 14px;
+}
+
+ol
+{
+	text-decoration: none;
+	font-variant: normal;
+	margin-left: 10px;
+	margin: 0em 0em 0em -1em;
+	vertical-align: middle;
+	margin-bottom: 9pt;
+	margin-right: 9pt;
+	margin-top: 9pt;
+}
+
+ul
+{
+	text-decoration: none;
+	font-variant: normal;
+	margin: 0px 0px 0px -1em;
+	list-style-type: disc;
+	margin-top: 9pt;
+	margin-bottom: 9pt;
+}
+
+div.AboutBox	/*Use the AboutBox style to create a box with a link to PDF*/
+{
+	overflow: hidden;
+	padding: 12px;
+	background-color: #fff;
+	margin-bottom: 36px;
+	margin-top: 30px;
+	position: relative;
+	width: 300px;
+	margin-right: auto;
+	margin-left: 0px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 15px;
+	color: #333;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #cccccc;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	box-shadow: 0 6px 9px -4px #03153b;
+}
+
+@media print
+{
+	div.AboutBox
+	{
+		display: none;
+	}
+}
+
+div.AboutBox a	/*Complex Selector: Links within the home tiles will have the following properties*/
+{
+	text-decoration: none;
+	color: #333;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+@media print
+{
+	div.AboutBox a	/*Complex Selector: Links within the home tiles will have the following properties*/
+	{
+		display: none;
+	}
+}
+
+a:link
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: none;
+	color: #1a1aff;
+}
+
+a:visited
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: none;
+	color: #1a1aff;
+}
+
+a:focus
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	color: #1a1aff;
+}
+
+div.AboutBox a:hover	/*Complex Selector: When hovering over links within the home tiles the following properties will apply.*/
+{
+	color: #1a1aff;
+}
+
+a:hover
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: underline;
+	color: #1a1aff;
+}
+
+a:active
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	color: #1a1aff;
+}
+
+p.InternalOnly
+{
+	mc-auto-number-format: '{color #ff704d}{b}INTERNAL ONLY: {/b}{/color}';
+	/* mc-auto-number-offset: */
+	/* mc-auto-number-position: */
+	overflow: hidden;
+	padding: 12px;
+	background-color: #FFF5EC;
+	border-left: solid 4px #ff704d;
+	margin-bottom: 14px;
+	margin-top: 14px;
+	
+}
+
+
+p.CloudOnly
+{
+	mc-auto-number-format: '{color #ff704d}{b}CLOUD ONLY: {/b}{/color}';
+	/* mc-auto-number-offset: */
+	/* mc-auto-number-position: */
+	overflow: hidden;
+	padding: 12px;
+	background-color: #FFF5EC;
+	border-left: solid 4px #ff704d;
+	margin-bottom: 14px;
+	margin-top: 14px;
+	
+}
+
+
+p.OnPremOnly
+{
+	mc-auto-number-format: '{color #ff704d}{b}ON-PREMISES ONLY: {/b}{/color}';
+	/* mc-auto-number-offset: */
+	/* mc-auto-number-position: */
+	overflow: hidden;
+	padding: 12px;
+	background-color: #FFF5EC;
+	border-left: solid 4px #ff704d;
+	margin-bottom: 14px;
+	margin-top: 14px;
+	
+}
+
+
+p.ClientFacing
+{
+	mc-auto-number-format: '{color #333}{b}CLIENT FACING: {/b}Can be shared with customers.{/color}';
+	/* mc-auto-number-offset: */
+	/* mc-auto-number-position: */
+	overflow: hidden;
+	padding: 12px;
+	background-color: #FFF5EC;
+	border-left: solid 4px #ff704d;
+	margin-bottom: 14px;
+	margin-top: 14px;
+	
+}
+
+
+
+p.Note, div.Note
+{
+	mc-auto-number-format: '{color #000099}{b}NOTE: {/b}{/color}';
+	overflow: hidden;
+	padding: 12px;
+	background-color: #cfe9fc;
+	border-top: solid 0px #0A75C2;
+	border-left: solid 4px #0A75C2;
+	border-right: solid 0px #0A75C2;
+	border-bottom: solid 0px #0A75C2;
+	margin-bottom: 14px;
+	margin-top: 14px;
+}
+
+p.Important, div.Important
+{
+	mc-auto-number-format: '{color #660099}{b}IMPORTANT: {/b}{/color}';
+	overflow: hidden;
+	padding: 12px;
+	background-color: #e6ccff;
+	border-left: solid 4px #8e33cc;
+	margin-bottom: 14px;
+	margin-top: 14px;
+}
+
+p.Tip, div.Tip
+{
+	mc-auto-number-format: '{color #009900}{b}TIP: {/b}{/color}';
+	overflow: hidden;
+	padding: 12px;
+	background-color: #ccffcc;
+	border-left: solid 4px #009900;
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+
+p.Warning, div.Warning
+{
+	mc-auto-number-format: '{color maroon}{b}WARNING: {/b}{/color}';
+	overflow: hidden;
+	padding: 12px;
+	background-color: #ffd6cc;
+	border-left: solid 4px #ff3300;
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+
+p.Example, div.Example
+{
+	mc-auto-number-format: '{color #005151}{b}EXAMPLE: {/b}{/color}';
+	overflow: hidden;
+	padding: 12px;
+	background-color: #f0f5f5;
+	border-left: solid 4px #005151;
+	margin-bottom: 14px;
+	margin-top: 14px;
+}
+
+p.QueryExample, div.QueryExample
+{
+	mc-auto-number-format: '{color #52a013}{b}QUERY EXAMPLE: {/b}{/color}';
+	overflow: hidden;
+	padding: 12px;
+	background-color: #f1fce8;
+	border-left: solid 4px #9cec5b;
+	margin-bottom: 14px;
+	margin-top: 14px;
+}
+
+
+/*==BEGIN styles for special boxes to label audience-specific content*/
+
+div.USOnly
+{
+	mc-auto-number-format: '{color #000099}{b}US ONLY: {/b} {/color}';
+	background-image: url('../Images/get_log_files.png');
+	background-repeat: no-repeat;
+	border: solid 2px #0A75C2;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding-left: 70px;
+	padding-right: 15px;
+	background-color: #cfe9fc;
+	margin: 20px 10px 20px 0;
+	line-height: 22px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	background-position: 15px 16px;
+}
+
+
+div.LinkToClientAuth
+{
+mc-auto-number-format: '{color #000099}{b}CLIENT FACING: {/b} {/color}';
+	background-image: ;
+	background-repeat: no-repeat;
+	border: solid 2px #0A75C2;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 90%;
+	background-color: #cfe9fc;
+	margin: 20px 10px 20px 0;
+	line-height: 22px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	background-position: 15px 16px;
+}
+
+
+
+/*==END styles for special boxes to label audience-specific content*/
+
+div:nth-child(3)
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+div:nth-child(2)
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+div:nth-child(1)
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+div::before
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+div::after
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+div
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 16pt;
+}
+
+hr
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border: solid 1px #dcdcdc;
+}
+
+a.MCBreadcrumbsLink
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	color: #1a1aff;
+}
+
+a.MCBreadcrumbsLink:hover
+{
+	text-decoration: underline;
+}
+
+p.TOC9
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.TOC8
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.TOC7
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.TOC6
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.TOC5
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+@media print
+{
+	p.TOC6,
+	p.TOC5,
+	p.TOC4,
+	p.TOC3,
+	p.TOC2
+	{
+		font-family: calibri;
+		font-weight: normal;
+		font-size: 11pt;
+		margin-bottom: 0px;
+		color: #3B3B3B;
+	}
+
+	p.TOC1
+	{
+		font-family: calibri;
+		font-weight: normal;
+		font-size: 11pt;
+		margin-bottom: 0px;
+		color: #3B3B3B;
+	}
+}
+
+p.TOC4
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.TOC3
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.TOC2
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.TOC1
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC9
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC8
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC7
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC6
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC5
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC4
+{
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+p.MiniTOC3
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC2
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+}
+
+p.MiniTOC1
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	color: #1a1aff;
+}
+
+p.MiniTOC1:link
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: none;
+	color: #1a1aff;
+}
+
+p.MiniTOC1:visited
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: none;
+	color: #1a1aff;
+}
+
+a.MiniTOC1:link
+{
+	font-weight: normal;
+}
+
+a.MiniTOC1:visited
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: none;
+	color: #1a1aff;
+}
+
+a.MiniTOC1:hover
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: underline;
+	color: blue;
+}
+
+p.MiniTOC1:focus
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	color: #1a1aff;
+}
+
+p.MiniTOC1:hover
+{
+	vertical-align: baseline;
+	font-variant: normal;
+	text-decoration: underline;
+	color: blue;
+}
+
+p.MiniTOC1:active
+{
+	vertical-align: baseline;
+	text-decoration: none;
+	font-variant: normal;
+	color: #1a1aff;
+}
+
+div.sideContentRight
+{
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 30%;
+	font-family: "Open Sans", Arial, sans-serif;
+	color: #000000;
+	font-size: 15px;
+	float: right;
+}
+
+MadCap|dropDownBody.Final
+{
+	border-bottom: solid 0px #000000;
+}
+
+img	/*Class for all of our images as of Oct 2023.*/
+{
+	border-style: solid;
+	border-color: #E4E4E4;
+	border-width: 1px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	mc-conditions: none;
+	box-shadow: 3px 3px 2px 1px rgba(0,0,0,0.1);
+	max-width: 100%;
+}
+
+
+img.NoBorder	/*Class for all of our images as of Oct 2023.*/
+{
+	border-style: solid;
+	border-color: #E4E4E4;
+	border-width: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	mc-conditions: none;
+	box-shadow: 3px 3px 2px 1px rgba(0,0,0,0.1);
+	max-width: 100%;
+}
+
+
+img.thumbnail	/*Class for images to expand/shrink when clicked. The two options for mc-thumbnail are hover and popup.*/
+{
+	border-style: solid;
+	border-color: #cfd0d0;
+	border-width: 1px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	mc-thumbnail: popup;
+	mc-conditions: none;
+	box-shadow: 4px 4px 3px 2px rgba(0,0,0,0.1);
+}
+
+img.DoesNotExpand	/*display image as only a thumbnail*/
+{
+	bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	mc-thumbnail: link;
+	mc-thumbnail-max-height: 36px;
+}
+
+img.smallbutton
+{
+	max-height: 25px;
+	max-width: 25px;
+}
+
+img.medbutton
+{
+	max-width: auto;
+	vertical-align: baseline;
+}
+
+
+
+div.wistia_embed	/* This controls the size of the wistia videos. Without this,
+                       the videos will not be visible.  */
+{
+
+height: 350px;
+width: 620px;
+}
+
+
+
+@media screen and (max-width: 767px)
+{
+	
+
+div.wistia_embed	/* This makes the wistia videos responsive for smaller devices/screens. */
+{
+height: 210px;
+width: 345px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+span.SearchHighlight
+{
+	background-color: #FFB52B;
+}
+
+MadCap|dropDownBody
+{
+	margin-left: 0.5px;
+}
+
+@media print
+{
+
+
+div.nocontent
+{
+display: none;
+}
+
+	img.thumbnail
+	{
+		max-width: 75%;
+		max-height: auto;
+		border-style: solid;
+		border-color: #cfd0d0;
+		border-width: 1px;
+	}
+
+	a
+	{
+		color: blue;
+	}
+
+	a:active
+	{
+		color: blue;
+	}
+
+	a:focus
+	{
+		color: blue;
+	}
+
+	a:hover
+	{
+		color: blue;
+	}
+
+	a:link
+	{
+		color: blue;
+		font-family: calibri;
+		font-size: 11pt;
+	}
+
+	a:visited
+	{
+		color: blue;
+		font-family: calibri;
+		font-size: 11pt;
+	}
+
+	p
+	{
+		line-height: normal;
+		mc-hyphenate: never;
+	}
+
+	p
+	{
+		line-height: normal;
+		mc-hyphenate: never;
+	}
+
+
+
+	h1
+	{
+		mc-hyphenate: never;
+	}
+
+	h2
+	{
+		mc-hyphenate: never;
+	}
+
+	ul
+	{
+		list-style-image: none;
+		line-height: normal;
+		margin-left: 2px;
+	}
+
+	ul > li::marker
+	{
+		content: '•';
+		vertical-align: -4px;
+		padding-right: 3px;
+	}
+
+	tr
+	{
+		line-height: normal;
+		mc-hyphenate: never;
+	}
+
+	ol
+	{
+		line-height: normal;
+		margin-left: 2px;
+	}
+
+
+
+	h4
+	{
+		mc-hyphenate: never;
+	}
+
+	h3
+	{
+		mc-hyphenate: never;
+	}
+
+	h5
+	{
+		mc-hyphenate: never;
+	}
+
+	h6
+	{
+		mc-hyphenate: never;
+	}
+
+	MadCap|dropDownBody
+	{
+		border-bottom-style: none;
+		mc-hyphenate: never;
+	}
+
+	p.TOC1
+	{
+		mc-expandable: true;
+	}
+
+
+
+	td
+	{
+		mc-hyphenate: never;
+	}
+
+	th
+	{
+		mc-hyphenate: never;
+	}
+
+	li
+	{
+		mc-hyphenate: never;
+	}
+}
+
+div.ContentRow	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.ContentRow::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.ContentRow::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.ContentRow > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.ContentRow > div:nth-child(1)
+{
+	width: 28%;
+	margin-left: 0%;
+}
+
+div.ContentRow > div:nth-child(2)
+{
+	width: 60%;
+	margin-left: 2%;
+}
+
+
+
+
+/*Begin styles for responsive pages on tablet and mobile*/
+
+@media tablet
+{
+	div.ContentRow > div:nth-child(1)
+	{
+		width: 32%;
+		margin-left: 0.5%;
+	}
+
+	div.ContentRow > div:nth-child(2)
+	{
+		width: 56%;
+		margin-left: 2%;
+	}
+}
+
+@media mobile
+{
+	div.ContentRow > div:nth-child(1)
+	{
+		width: 95%;
+		margin-left: 1%;
+	}
+
+	div.ContentRow > div:nth-child(2)
+	{
+		width: 95%;
+		margin-left: 1%;
+	}
+
+	div.sticky-menu
+	{
+		display: none;
+	}
+}
+
+/*End styles for responsive pages on tablet and mobile*/
+/*BEGIN elements for lists with custom bullets*/
+
+ul.NoBullet	/*use this ul for lists with custom bullets*/
+{
+	list-style-type: none;
+	padding: 0px;
+	margin-left: 3px;
+	margin-bottom: 3px;
+	margin: 8px 0px 8px 3px;
+}
+
+li.CustomBulletBlueSquare
+{
+	background-image: url('../Assets/BulletSqBl.png');
+	background-repeat: no-repeat;
+	display: block;
+	padding-top: 1px;
+	background-position: 0px 21px;
+	height: auto;
+	margin: 0px;
+	padding-left: 16px;
+	line-height: 16pt;
+}
+
+li.CustomBulletBlueSqSm
+{
+	background-image: url('../Assets/BulletSqBlSm.png');
+	background-repeat: no-repeat;
+	display: block;
+	padding-top: 1px;
+	background-position: 0px 22px;
+	height: auto;
+	margin: 0px;
+	padding-left: 13px;
+	line-height: 16pt;
+}
+
+/*END elements for lists with custom bullets*/
+
+span.SearchHighlight1
+{
+	color: #000000;
+	background-color: #FFB52B;
+}
+
+span.SearchHighlight10
+{
+	color: #ffffff;
+	background-color: #FFB52B;
+}
+
+span.SearchHighlight2
+{
+	color: #000000;
+	background-color: #FFB52B;
+}
+
+span.SearchHighlight3
+{
+	color: #000000;
+	background-color: #FFB52B;
+}
+
+span.SearchHighlight4
+{
+	color: #000000;
+	background-color: #FFB52B;
+}
+
+span.SearchHighlight5
+{
+	color: #000000;
+	background-color: #FFB52B;
+}
+
+span.SearchHighlight6
+{
+	color: #ffffff;
+	background-color: #FFB52B;
+}
+
+span.SearchHighlight7
+{
+	color: #ffffff;
+	background-color: #FFB52B;
+}
+
+span.SearchHighlight8
+{
+	color: #ffffff;
+	background-color: #FFB52B;
+}
+
+span.SearchHighlight9
+{
+	color: #ffffff;
+	background-color: #FFB52B;
+}
+
+
+/* BEGIN elements for Microsoft Copilot Chatbot */
+
+
+
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+
+
+
+
+
+
+
+
+
+
+/* END elements for Microsoft Copilot Chatbot */
